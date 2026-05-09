@@ -72,7 +72,7 @@ class HomeViewModel(app: Application) : AndroidViewModel(app) {
             // Seed DB if it's the first run or if data is missing
             val existing = repo.getAll().first()
             val count = existing.size
-            val isFullyUpdated = existing.any { it.englishWord == "Dependent Events" }
+            val isFullyUpdated = existing.any { it.englishWord == "De Moivre's Theorem" }
             
             // Re-seed if data is missing or if the new 600-word list isn't fully loaded
             if (count < 600 || !isFullyUpdated) {

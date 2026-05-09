@@ -43,6 +43,16 @@ object PreloadedTerms {
             "Science"
         )
         add(
+            "Immunity System",
+            "ರೋಗನಿರೋಧಕ ವ್ಯವಸ್ಥೆ",
+            "ದೇಹದ ರೋಗಕಾರಕಗಳನ್ನು ಮುಕಾಬಲೆ ಮಾಡುವ ವ್ಯವಸ್ಥೆ",
+            "Body's defense mechanism against pathogens",
+            "Immunity system protects against infections",
+            "ರೋಗನಿರೋಧಕ ವ್ಯವಸ್ಥೆ ಸೋಂಕುಗಳಿಂದ ರಕ್ಷಿಸುತ್ತದೆ",
+            "Science"
+        )
+
+        add(
             "Product",
             "ಉತ್ಪನ್ನ",
             "ರಾಸಾಯನಿಕ ಕ್ರಿಯೆಯಿಂದ ಉತ್ಪನ್ನವಾಗುವ ಪದಾರ್ಥ",
@@ -2901,6 +2911,619 @@ object PreloadedTerms {
             "ಮಾರುಕಟ್ಟೆ ಯಂತ್ರೀಕರಣ.",
             "Commerce"
         )
+        // Chapter 17-20: Additional Commerce Terms (85 new terms)
+        add(
+            "Balance Sheet",
+            "ಬ್ಯಾಲೆನ್ಸ್ ಶೀಟ್",
+            "ಸಾಲಿನ ಸ್ಥಿತಿ ಒಂದು ನಿರ್ದಿಷ್ಟ ದಿನದ ಅಂತ್ಯದಲ್ಲಿ",
+            "Statement of assets and liabilities",
+            "Balance sheet shows financial position",
+            "ಬ್ಯಾಲೆನ್ಸ್ ಶೀಟ್ ಆರ್ಥಿಕ ಸ್ಥಿತಿ ತೋರಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Income Statement",
+            "ಆದಾಯ ಹೇಳಿಕೆ",
+            "ವ್ಯವಹಾರದ ಆದಾಯ ಮತ್ತು ವೆಚ್ಚ",
+            "Shows profit and loss",
+            "Income statement reveals net income",
+            "ಆದಾಯ ಹೇಳಿಕೆ ನಿವ್ವಳ ಆದಾಯ ಸೂಚಿತವಾಗುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Cash Flow",
+            "ನಗದ ಹರಿವು",
+            "ಸಾಲಿನಿಂದ ಬೇರೆ ನಗದು ಹರಿವು",
+            "Movement of cash in and out",
+            "Track cash flow for liquidity",
+            "ದ್ರವತೆಗೆ ನಗದ ಹರಿವು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ",
+            "Commerce"
+        )
+        add(
+            "Liquidity",
+            "ದ್ರವತೆ",
+            "ತಾತ್ಕಾಲಿಕವಾಗಿ ನಗದುವಾಗಿ ಪರಿವರ್ತಿಸುವ ಸಾಮರ್ಥ್ಯ",
+            "Ability to convert to cash",
+            "Current ratio measures liquidity",
+            "ಪ್ರವಾಹ ಅನುಪಾತ ದ್ರವತೆ ಅಳೆಯುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Solvency",
+            "ಸಾಲ ಪಾವತಿ ಸಾಮರ್ಥ್ಯ",
+            "ದೀರ್ಘಾವಧಿ ಸಾಲ ಪಾವತಿ ಕ್ಷಮತೆ",
+            "Ability to pay long-term debts",
+            "Debt-to-equity ratio shows solvency",
+            "ಸಾಲ-ಇಕ್ವಿಟಿ ಅನುಪಾತ ಸಾಲ ಪಾವತಿ ಸಾಮರ್ಥ್ಯ ತೋರಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Profitability",
+            "ಲಾಭಜನಕತೆ",
+            "ನಿವ್ವಳ ಲಾಭವನ್ನು ಆದಾಯಗೆ ಅನುಪಾತ",
+            "Profit relative to revenue",
+            "Profit margin indicates profitability",
+            "ಲಾಭ ಅಂಚು ಲಾಭಜನಕತೆ ಸೂಚಿತವಾಗುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "ROI",
+            "ಹೂಡಿಕೆ ಮೇಲಿನ ಆದಾಯ",
+            "ಹೂಡಿಕೆ ಮೇಲಿನ ಪ್ರಾಯೋಗಿಕ ಆದಾಯ",
+            "Return on investment percentage",
+            "High ROI indicates good investment",
+            "ಹೆಚ್ಚಿನ ROI ಉತ್ತಮ ಹೂಡಿಕೆ ಸೂಚಿತವಾಗುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "ROE",
+            "ಇಕ್ವಿಟಿ ಮೇಲಿನ ಆದಾಯ",
+            "ಮಾಲೀಕ ಇಕ್ವಿಟಿ ಮೇಲಿನ ಲಾಭ",
+            "Return on equity percentage",
+            "ROE measures profit on shareholders' equity",
+            "ROE ಷೇರುದಾರರ ಇಕ್ವಿಟಿ ಮೇಲಿನ ಲಾಭ ಅಳೆಯುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Working Capital",
+            "ಕಾರ್ಯಶೀಲ ಪೂಂಜಿ",
+            "ಪ್ರವಾಹ ಸম್ಪತ್ತಿ - ಪ್ರವಾಹ ಹೊಣೆಗಾರಿಕೆ",
+            "Current assets minus current liabilities",
+            "Positive working capital is healthy",
+            "ಧನಾತ್ಮಕ ಕಾರ್ಯಶೀಲ ಪೂಂಜಿ ಆರೋಗ್ಯಕರವಾಗಿದೆ",
+            "Commerce"
+        )
+        add(
+            "Depreciation",
+            "ಅವಹೇಳನೆ",
+            "ಸ್ಥಿರ ಸಂಪತ್ತಿ ಕಾಲ ಕ್ರಮೇ ಮೂಲ್ಯ ಕಳೆಯುವುದು",
+            "Decrease in asset value over time",
+            "Straight-line depreciation method",
+            "ಸರಳ ರೇಖೆ ಅವಹೇಳನೆ ವಿಧಾನ",
+            "Commerce"
+        )
+        add(
+            "Amortization",
+            "ಸಾಲ ಶೋಧನೆ",
+            "ಅಮೂರ್ತ ಸಂಪತ್ತಿ ಕಾಲ ಕ್ರಮೇ ವೆಚ್ಚ",
+            "Spreading intangible asset cost",
+            "Amortization schedule for loans",
+            "ಸಾಲ ಶೋಧನೆ ಅನುಸೂಚಿ",
+            "Commerce"
+        )
+        add(
+            "Goodwill",
+            "ಸುನಾಮ",
+            "ಮೌಲ್ಯ ಮೂಲಕ ಬೆಲೆಗೆ ಹೆಚ್ಚು ನೀಡಿದ ಪ್ರಿಮಿಯಮ",
+            "Premium paid above asset value",
+            "Goodwill is an intangible asset",
+            "ಸುನಾಮ ಅಮೂರ್ತ ಸಂಪತ್ತಿ",
+            "Commerce"
+        )
+        add(
+            "Inventory Management",
+            "ದಾಸ್ತಾನು ವ್ಯವಸ್ಥಾಪನೆ",
+            "ತರಬೇತಿ ಪದಾರ್ಥಗಳು ಕಾರ್ಯಶೀಲ ಪ್ರವಾಹ",
+            "Managing stock of goods",
+            "Inventory turnover ratio measures efficiency",
+            "ದಾಸ್ತಾನು ಟರ್ನೋವರ್ ಅನುಪಾತ ದಕ್ಷತೆ ಅಳೆಯುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "ABC Analysis",
+            "ABC ವಿಶ್ಲೇಷಣೆ",
+            "ಉತ್ಪನ್ನಗಳನ್ನು ಮೂಲ್ಯದ ಆಧಾರದ ಶ್ರೇಣೀಕರಣ",
+            "Classify items by value",
+            "ABC analysis controls inventory cost",
+            "ABC ವಿಶ್ಲೇಷಣೆ ದಾಸ್ತಾನು ವೆಚ್ಚ ನಿಯಂತ್ರಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "EOQ",
+            "ಅರ್ಥಶಾಸ್ತ್ರದ ಅರ್ಡರ ಪ್ರಮಾಣ",
+            "ಕ್ರಯ ವೆಚ್ಚ ಮತ್ತು ಸಾಗಣೆ ವೆಚ್ಚ ಕಡಿಮೆ",
+            "Optimal order quantity to minimize cost",
+            "EOQ formula reduces total cost",
+            "EOQ ಸೂತ್ರ ಒಟ್ಟು ವೆಚ್ಚ ಕಡಿಮೆ ಮಾಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Supply Chain",
+            "ಸರಬರಾಜು ಸರಣಿ",
+            "ಉತ್ಪಾದನೆ ಅಂತ್ಯ ಗ್ರಾಹಕದವರೆಗೆ ಸಂಪೂರ್ಣ ವಿಕ್ರಯ",
+            "Journey from producer to consumer",
+            "Efficient supply chain reduces cost",
+            "ದಕ್ಷ ಸರಬರಾಜು ಸರಣಿ ವೆಚ್ಚ ಕಡಿಮೆ ಮಾಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Outsourcing",
+            "ಬಾಹ್ಯ ಸೋರ್ಸಿಂಗ್",
+            "ಮತ್ತೊಂದು ಕಂಪನಿಗೆ ಕೆಲಸವನ್ನು ಸಾಲವನ್ನು ನೀಡುವುದು",
+            "Hiring external company for tasks",
+            "Outsourcing reduces operational cost",
+            "ಬಾಹ್ಯ ಸೋರ್ಸಿಂಗ್ ಕಾರ್ಯಾಚರಣಾ ವೆಚ್ಚ ಕಡಿಮೆ ಮಾಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Quality Control",
+            "ಗುಣಮಾನ ನಿಯಂತ್ರಣ",
+            "ಉತ್ಪನ್ನ ಮಾನದಂಡಗಳ ಅನುವರ್ತನೆ ಪರೀಕ್ಷೆ",
+            "Ensuring product meets standards",
+            "Quality control prevents defects",
+            "ಗುಣಮಾನ ನಿಯಂತ್ರಣ ದೋಷ ತಡೆಯುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Six Sigma",
+            "ಸಿಕ್ಸ್ ಸಿಗ್ಮಾ",
+            "ಬಹಳ ಕಡಿಮೆ ತೆರೆದಿರುವ ವ್ಯತ್ಯಾಸ ಎಂದರೆ",
+            "Process improvement methodology",
+            "Six sigma reduces process variation",
+            "ಸಿಕ್ಸ್ ಸಿಗ್ಮಾ ಪ್ರಕ್ರಿಯೆ ವ್ಯತ್ಯಾಸ ಕಡಿಮೆ ಮಾಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Lean Management",
+            "ಸಾರ ವ್ಯವಸ್ಥಾಪನೆ",
+            "ವ್ಯರ್ಥ ತೆಗೆದುಹಾಕುವ ಸೋಡೆ",
+            "Eliminate waste in processes",
+            "Lean improves efficiency",
+            "ಸಾರ ವ್ಯವಸ್ಥಾಪನೆ ದಕ್ಷತೆ ಸುಧಾರಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "JIT",
+            "ನಿಖರ ಸಮಯದ ಉತ್ಪಾದನೆ",
+            "ಮುಂಚಿತವಾಗಿ ನಿಖರ ಸಮಯವನ್ನು ಪೂರೈಕೆ",
+            "Just-in-time delivery method",
+            "JIT reduces inventory holding cost",
+            "JIT ದಾಸ್ತಾನು ಹಿಡಿದ ವೆಚ್ಚ ಕಡಿಮೆ ಮಾಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Business Ethics",
+            "ವ್ಯವಹಾರ ನೈತಿಕತೆ",
+            "ವ್ಯವಹಾರ ಕಾರ್ಯಗಳಲ್ಲಿ ಸರಿ ತೆರೆದಿರುವ ನೀತಿ",
+            "Moral principles in business",
+            "Business ethics builds trust",
+            "ವ್ಯವಹಾರ ನೈತಿಕತೆ ವಿಶ್ವಾಸ ನಿರ್ಮಾಣ ಮಾಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Corporate Governance",
+            "ಸಾಲಿನ ನಿರ್ವಹಣೆ",
+            "ಸಾಲಿನ ನೇತೃತ್ವ ಮತ್ತು ಸ್ವಾಮಿತ್ವ ವಿಷಯ",
+            "System of managing company",
+            "Good governance ensures accountability",
+            "ಉತ್ತಮ ನಿರ್ವಹಣೆ ಜವಾಬ್ದಾರಿತೆ ನಿಶ್ಚಿತ ಮಾಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "CSR",
+            "ಸಾಲಿನ ಸಾಮಾಜಿಕ ಜವಾಬ್ದಾರಿತೆ",
+            "ಸಾಮಾಜಿಕ ಕಲ್ಯಾಣ ಕ್ರಿಯೆಕಲಾಪ",
+            "Corporate social responsibility programs",
+            "CSR improves brand image",
+            "CSR ಬ್ರಾಂಡ್ ಚಿತ್ರ ಸುಧಾರಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Sustainability",
+            "ಸುಗಮ ಜೀವನೋಪಾಯ",
+            "ಪರಿಸರ ನೋಡುತ್ತಿರುವ ವ್ಯವಹಾರ",
+            "Eco-friendly business practices",
+            "Sustainability reduces environmental impact",
+            "ಸುಗಮ ಜೀವನೋಪಾಯ ಪರಿಸರ ಪ್ರಭಾವ ಕಡಿಮೆ ಮಾಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Green Business",
+            "ಹಸಿರು ವ್ಯವಹಾರ",
+            "ಪರಿಸರವನ್ನು ಕೀಲಿಲೆಯಿಂದ ಸುರಕ್ಷಿಸುವ ವ್ಯವಹಾರ",
+            "Environmentally friendly business",
+            "Green business attracts conscious consumers",
+            "ಹಸಿರು ವ್ಯವಹಾರ ಸಚೇತ ಗ್ರಾಹಕರನ್ನು ಆಕರ್ಷಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Social Media Marketing",
+            "ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ ಮಾರಾಟ",
+            "ಸಾಮಾಜಿಕ ಜಾಲ ಮಾಧ್ಯಮ ವಿಜ್ಞಾಪನ",
+            "Marketing through social platforms",
+            "Social media reaches wide audience",
+            "ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ ವ್ಯಾಪಕ ದರ್ಶಕಾಂಗಕ್ಕೆ ಸಮೀಪಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Digital Marketing",
+            "ಡಿಜಿಟಲ್ ಮಾರಾಟ",
+            "ಆನ್‌ಲೈನ್ ಪ್ಲೇಟ್‌ಫಾರ್ಮ ವಿಜ್ಞಾಪನ ಮತ್ತು ಪ್ರಚಾರ",
+            "Marketing using digital channels",
+            "Digital marketing measures ROI easily",
+            "ಡಿಜಿಟಲ್ ಮಾರಾಟ ROI ಸುಲಭವಾಗಿ ಅಳೆಯುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Email Marketing",
+            "ಇಮೈಲ್ ಮಾರಾಟ",
+            "ಇಮೈಲ್ ಮೂಲಕ ಗ್ರಾಹಕ ಸಂಪರ್ಕ",
+            "Marketing via email campaigns",
+            "Email marketing has high conversion rate",
+            "ಇಮೈಲ್ ಮಾರಾಟ ಹೆಚ್ಚಿನ ಪರಿವರ್ತನ ದರ",
+            "Commerce"
+        )
+        add(
+            "Content Marketing",
+            "ಅಥವಾ ಮಾರಾಟ",
+            "ಮೂಲ್ಯವಾದ ಅವುಗಳನ್ನು ಮೂಲಕ ಗ್ರಾಹಕ ಆಕರ್ಷಣೆ",
+            "Attract through valuable content",
+            "Content marketing builds authority",
+            "ಅಥವಾ ಮಾರಾಟ ಆಧಿಕಾರ ನಿರ್ಮಾಣ ಮಾಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "SEO",
+            "ಹುಡುಕಾಟ ಎಂಜಿನ್ ಆನುಕೂಲತೆ",
+            "ಜಾಲ ಸ್ಥಳ ಹುಡುಕಾಟ ಫಲಗಳಲ್ಲಿ ರೇಟಿಂಗ",
+            "Search engine optimization",
+            "SEO improves organic traffic",
+            "SEO ಸಾವತಿಕ ಟ್ರಾಫಿಕ್ ಸುಧಾರಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "PPC",
+            "ನಕ್ಷತ್ರ ನುಡಿಸಿ ವಿಜ್ಞಾಪನ",
+            "ಪ್ರತಿಯೊಂದು ಕ್ಲಿಕ್ ತಕ್ಕೆ ಶುಲ್ಕ ವಿಜ್ಞಾಪನ",
+            "Pay-per-click advertising",
+            "PPC provides immediate traffic",
+            "PPC ತಾತ್ಕ್ಷಣಿಕ ಟ್ರಾಫಿಕ್ ಒದಗಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Affiliate Marketing",
+            "ಸಹಯೋಗಿ ಮಾರಾಟ",
+            "ಸಲಿಸಿದಾಗ ಆದಸರೂಪ ಮಾರುಕಟ್ಟೆದಾರ",
+            "Commission-based marketing program",
+            "Affiliate marketing expands reach",
+            "ಸಹಯೋಗಿ ಮಾರಾಟ ಪರಿಧಿ ವಿಸ್ತರಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Influencer Marketing",
+            "ಪ್ರಭಾವಶಾಲಿ ಮಾರಾಟ",
+            "ಪ್ರಸಿದ್ಧ ವ್ಯಕ್ತಿದಿಂದ ಉತ್ಪನ್ನ ಪ್ರಚಾರ",
+            "Marketing through influential personalities",
+            "Influencer marketing builds credibility",
+            "ಪ್ರಭಾವಶಾಲಿ ಮಾರಾಟ ವಿಶ್ವಾಸಾರ್ಹತೆ ನಿರ್ಮಾಣ ಮಾಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Event Marketing",
+            "ಈವೆಂಟ್ ಮಾರಾಟ",
+            "ಅನುষ್ಠಾನ ಮತ್ತು ಕಾರ್ಯಕ್ರಮದಿಂದ ಪ್ರಚಾರ",
+            "Marketing through events",
+            "Event marketing creates memorable experiences",
+            "ಈವೆಂಟ್ ಮಾರಾಟ ಜ್ಞಾಪನೀಯ ಅನುಭವ ರಚಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Brand Building",
+            "ಬ್ರಾಂಡ್ ನಿರ್ಮಾಣ",
+            "ಪರಿಚಯ ಮತ್ತು ಬ್ರಾಂಡ್ ಚೆನ್ನಾಗೆ ವಿಕಸನ",
+            "Developing strong brand identity",
+            "Strong brands command premium price",
+            "ಬಲವಾದ ಬ್ರಾಂಡ್ ಪ್ರಿಮಿಯಮ ಬೆಲೆ ಬೇಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Brand Loyalty",
+            "ಬ್ರಾಂಡ್ ನಿಷ್ಠೆ",
+            "ಗ್ರಾಹಕ ಪುನರಾವರ್ತಿತ ಕ್ರಯ ಒಪ್ಪಿಗೆ",
+            "Customer repeat purchase behavior",
+            "Brand loyalty increases lifetime value",
+            "ಬ್ರಾಂಡ್ ನಿಷ್ಠೆ ಜೀವನ ಅವಧಿ ಮೌಲ್ಯ ಹೆಚ್ಚಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Customer Retention",
+            "ಗ್ರಾಹಕ ತನಿಖೆ",
+            "ನೀಕಟಿನಲ್ಲಿ ಗ್ರಾಹಕ ಸಂಪೂರ್ಣ",
+            "Keeping customers for longer period",
+            "Customer retention is cheaper than acquisition",
+            "ಗ್ರಾಹಕ ತನಿಖೆ ಗ್ರಹಣಕ್ಕಿಂತ ಮಿತಿತರವಾಗಿದೆ",
+            "Commerce"
+        )
+        add(
+            "Customer Acquisition",
+            "ಗ್ರಾಹಕ ಗ್ರಹಣ",
+            "ಹೊಸ ಗ್ರಾಹಕ ಸಂಪಾದಕ",
+            "Getting new customers",
+            "Customer acquisition cost affects profitability",
+            "ಗ್ರಾಹಕ ಗ್ರಹಣ ವೆಚ್ಚ ಲಾಭಜನಕತೆ ಪರಿಣಾಮ",
+            "Commerce"
+        )
+        add(
+            "Customer Lifetime Value",
+            "ಗ್ರಾಹಕ ಜೀವನ ಅವಧಿ ಮೌಲ್ಯ",
+            "ಸಂಪೂರ್ಣ ನಡೆಬೇಕಿರುವ ಬಿಂದುಗಳ ಮೌಲ್ಯ",
+            "Total revenue from single customer",
+            "CLV guides marketing spend",
+            "CLV ಮಾರಾಟ ವೆಚ್ಚ ಮಾರ್ಗದರ್ಶನ ನೀಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Market Share",
+            "ಮಾರುಕಟ್ಟೆ ಭಾಗ",
+            "ಒಟ್ಟು ಮಾರುಕಟ್ಟೆ ನಲ್ಲಿ ಕಂಪನಿ ಭಾಗ",
+            "Company's portion of total market",
+            "Increasing market share drives growth",
+            "ಮಾರುಕಟ್ಟೆ ಭಾಗ ವೃದ್ಧಿ ಬೆಳವಣಿಗೆ ನಿರ್ದೇಶನಕ ಮಾಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Market Segmentation",
+            "ಮಾರುಕಟ್ಟೆ ವಿಭಾಗೀಕರಣ",
+            "ಗ್ರಾಹಕವನ್ನು ಸಮೂಹ ಭಾಗಿ",
+            "Dividing market into customer groups",
+            "Market segmentation targets specific groups",
+            "ಮಾರುಕಟ್ಟೆ ವಿಭಾಗೀಕರಣ ನಿರ್ದಿಷ್ಟ ಗುಂಪುಗಳು ಗುರಿಬಿಂದುವಾಗುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Target Market",
+            "ಗುರಿ ಮಾರುಕಟ್ಟೆ",
+            "ವ್ಯವಹಾರ ಮಾರಾಟ ಸೂದ್ಧ ಗ್ರಾಹಕ ಗುಂಪು",
+            "Specific customer group for product",
+            "Know your target market",
+            "ಗುರಿ ಮಾರುಕಟ್ಟೆ ತಿಳಿಯಿರಿ",
+            "Commerce"
+        )
+        add(
+            "SWOT Analysis",
+            "SWOT ವಿಶ್ಲೇಷಣೆ",
+            "ಶಕ್ತಿ, ದುರ್ಬಲತೆ, ಅವಸರ, ಅಪಾಯ ಪರೀಕ್ಷೆ",
+            "Strengths, weaknesses, opportunities, threats",
+            "SWOT analysis guides strategy",
+            "SWOT ವಿಶ್ಲೇಷಣೆ ಕೌಶಲ್ಯ ಮಾರ್ಗದರ್ಶನ ನೀಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Porter Five Forces",
+            "ಪೋರ್ಟರ್ ಐದು ಶಕ್ತಿ",
+            "ಶಿಲ್ಪ ಅನುಕ್ರಮದ ವಿಶ್ಲೇಷಣೆ",
+            "Competitive forces in industry",
+            "Porter's model analyzes industry attractiveness",
+            "ಪೋರ್ಟರ್ ಮಾದರಿ ಶಿಲ್ಪ ಆಕರ್ಷಣೀಯತೆ ವಿಶ್ಲೇಷಣೆ",
+            "Commerce"
+        )
+        add(
+            "Competitor Analysis",
+            "ಪರಿವೃತ್ತ ವಿಶ್ಲೇಷಣೆ",
+            "ಪ್ರತಿದ್ವಂದ್ವೀ ಅಧ್ಯಯನ ಮತ್ತು ಹೋಲನೆ",
+            "Studying competitor strategies",
+            "Competitor analysis reveals opportunities",
+            "ಪರಿವೃತ್ತ ವಿಶ್ಲೇಷಣೆ ಅವಸರ ಬಹಿರಂಗ ಮಾಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Benchmarking",
+            "ಪರಿಮಾಣ ಸೇಟಿ",
+            "ಉತ್ತಮ ಪ್ರಥೆ ಆರು ನಿಯೋಜಿತಗೊಳಿಸುವುದು",
+            "Comparing with industry best practices",
+            "Benchmarking improves performance",
+            "ಪರಿಮಾಣ ಸೇಟಿ ಕಾರ್ಯಕ್ಷಮತೆ ಸುಧಾರಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Value Chain",
+            "ಮೌಲ್ಯ ಸರಿಸುಮಾರೀ",
+            "ವ್ಯವಹಾರ ಎಲ್ಲಾ ಕಲೆಗಳ ಸರಿಸುಮಾರೀ",
+            "All activities that create value",
+            "Value chain analysis identifies advantages",
+            "ಮೌಲ್ಯ ಸರಿಸುಮಾರೀ ಪುರಸ್ಕೃತ ವಿಷಯಗಳನ್ನು ಗುರುತಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Resource Planning",
+            "ಸಂಪತ್ತಿ ಯೋಜನಾ",
+            "ಕಾರ್ಯಕ್ರಮ ವಿತರಣೆ ಬೀಜದ",
+            "Allocating resources efficiently",
+            "Proper resource planning ensures success",
+            "ಸರಿಯಾದ ಸಂಪತ್ತಿ ಯೋಜನಾ ಯಶಸ್ಸು ನೀಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Project Management",
+            "ಪ್ರಕಲ್ಪ ನಿರ್ವಹಣೆ",
+            "ಯೋಜನೆ ಕಾರ್ಯಸಾಧಕ ಕಾರ್ಯಾಸಿ",
+            "Managing projects to completion",
+            "Project management ensures timely delivery",
+            "ಪ್ರಕಲ್ಪ ನಿರ್ವಹಣೆ ಸಮಯೋಪಯೋಗಿ ಮತ್ತೆಗುಲು ಖಾತ್ರಿ",
+            "Commerce"
+        )
+        add(
+            "Critical Path",
+            "ನಿರ್ಣಾಯಕ ಮಾರ್ಗ",
+            "ಭಾವಿ ಶ್ರೇಷ್ಠ ಕಾರ್ಯ ಕ್ರಮ",
+            "Longest sequence of dependent activities",
+            "Critical path determines project duration",
+            "ನಿರ್ಣಾಯಕ ಮಾರ್ಗ ಪ್ರಕಲ್ಪ ಚಾಲೆಣೆ ನಿರ್ಧರಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "PERT",
+            "ಪ್ರೊಗ್ರಾಮ್ ರೂಪಾವಳಿ ಮೂಲ್ಯಮಾಪನ ವಿಧಾನ",
+            "ಪ್ರಕಲ್ಪ ಮುದ್ರಣ ವಾಸ್ತವ ಅಧ್ಯಯನ",
+            "Program evaluation and review technique",
+            "PERT estimates project duration",
+            "PERT ಪ್ರಕಲ್ಪ ಚಾಲೆಣೆ ಭಾವಿ ಮಾಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Gantt Chart",
+            "ಗ್যಾಂಟ್ ಚಾರ್ಟ್",
+            "ಪ್ರಕಲ್ಪ ಕಾರ್ಯ ಸುದೃಢ ಚಿತ್ರ",
+            "Visual representation of project schedule",
+            "Gantt chart shows task timeline",
+            "ಗ್যಾಂಟ್ ಚಾರ್ಟ್ ಕಾರ್ಯ ಸೂಚಕ ತೋರಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Risk Management",
+            "ಅಪಾಯ ನಿರ್ವಹಣೆ",
+            "ಪ್ರಕಲ್ಪ ಅಪಾಯ ಗುರುತಿಸುವುದು ಮತ್ತು ತೆರೆಯುವುದು",
+            "Identifying and mitigating risks",
+            "Risk management reduces project failures",
+            "ಅಪಾಯ ನಿರ್ವಹಣೆ ಪ್ರಕಲ್ಪ ವಿಫಲತೆ ಕಡಿಮೆ ಮಾಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Change Management",
+            "ಪರಿವರ್ತನ ನಿರ್ವಹಣೆ",
+            "ಸಾಲಿಂಗ ಬದಲಾವಣೆ ನೌಕರ ಮುಖಾಂತರ",
+            "Managing organizational changes",
+            "Change management eases transitions",
+            "ಪರಿವರ್ತನ ನಿರ್ವಹಣೆ ರೂಪಾಂತರ ಸುಲಭತರ ಮಾಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Training and Development",
+            "ತರಬೇತಿ ಮತ್ತು ಬೆಳವಣಿಗೆ",
+            "ನೌಕರ ಕೌಶಲ್ಯ ಪುನರಾಂಕನ ಮತ್ತು ಭೋಜನ",
+            "Improving employee skills",
+            "Training increases employee productivity",
+            "ತರಬೇತಿ ನೌಕರ ಉತ್ಪಾದನಶೀಲತೆ ಹೆಚ್ಚಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Performance Appraisal",
+            "ಕಾರ್ಯಕ್ಷಮತೆ ಮೂಲ್ಯಮಾಪನ",
+            "ನೌಕರ ಕಾರ್ಯಕ್ಷಮತೆ ನಿರ್ಣಯ",
+            "Evaluating employee performance",
+            "Performance appraisal drives improvement",
+            "ಕಾರ್ಯಕ್ಷಮತೆ ಮೂಲ್ಯಮಾಪನ ಸುಧಾರ ಪರಿಚಾಲನ ಮಾಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Compensation",
+            "ಪರಿಹಾರ",
+            "ನೌಕರ ವೇತನ, ಪ್ರಾಣಕೋಶ ಮತ್ತು ಲಾಭಾಂಶ",
+            "Employee salary and benefits",
+            "Competitive compensation attracts talent",
+            "ಸ್ಪರ್ಧಾತ್ಮಕ ಪರಿಹಾರ ಪ್ರತಿಭೆ ಆಕರ್ಷಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Incentive Scheme",
+            "ಪ್ರೋತ್ಸಾಹನ ಯೋಜನೆ",
+            "ನೌಕರ ಸಂಪನ್ನ ಹೆಚ್ಚುವರಿ ಪುರಸ್ಕಾರ",
+            "Bonus and reward programs",
+            "Incentive schemes motivate employees",
+            "ಪ್ರೋತ್ಸಾಹನ ಯೋಜನೆ ನೌಕರ ಉಚ್ಛೆರ ಮಾಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Employee Engagement",
+            "ನೌಕರ ತಾಲ್ಮೆಲಿ",
+            "ನೌಕರ ಕಾರ್ಯಸಂಪರ್ಕ ಸಮಾಲೋಚನೆ",
+            "Involving employees in decisions",
+            "Employee engagement improves retention",
+            "ನೌಕರ ತಾಲ್ಮೆಲಿ ತನಿಖೆ ಸುಧಾರಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Work Culture",
+            "ಕಾರ್ಯ ಸಂಸ್ಕೃತಿ",
+            "ಸಾಲಿನ ಮೌಲ್ಯಬೋಧ ಮತ್ತು ವ್ಯವಹಾರ",
+            "Organization's values and practices",
+            "Positive work culture attracts talent",
+            "ಸುಗಮ ಕಾರ್ಯ ಸಂಸ್ಕೃತಿ ಪ್ರತಿಭೆ ಆಕರ್ಷಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Work-Life Balance",
+            "ಕಾರ್ಯ-ಜೀವನ ನೇರಲಯ",
+            "ನೌಕರ ಕಾರ್ಯ ಮತ್ತು ವೈಯಕ್ತಿಕ ಸಮನ್ವಯ",
+            "Balance between work and personal life",
+            "Work-life balance reduces stress",
+            "ಕಾರ್ಯ-ಜೀವನ ನೇರಲಯ ಒತ್ತಡ ಕಡಿಮೆ ಮಾಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Organizational Structure",
+            "ಸಂಸ್ಥೆಯ ರಚನೆ",
+            "ಸಾಲಿನ ಆಜ್ಞಾ ಸರಣಿ ಮತ್ತು ಸಂಪರ್ಕ",
+            "Hierarchy and reporting structure",
+            "Clear organizational structure improves efficiency",
+            "ಸ್ಪಷ್ಟ ಸಂಸ್ಥೆಯ ರಚನೆ ದಕ್ಷತೆ ಸುಧಾರಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Leadership",
+            "ನೇತೃತ್ವ",
+            "ನೇತೃ ಸಾಲಿನ ದಿಕ್ಕು ನೀಡುವುದು",
+            "Guiding team towards goals",
+            "Effective leadership drives performance",
+            "ಪರಿಣಾಮಕಾರಿ ನೇತೃತ್ವ ಕಾರ್ಯಕ್ಷಮತೆ ಪರಿಚಾಲನ ಮಾಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Decision Making",
+            "ನಿರ್ಣಯ ತೆಗೆದುಕೊಳ್ಳುವುದು",
+            "ಪರ್ಯಾಯ ಮೌಲ್ಯಾಂಕನ ಮತ್ತು ಆಯ್ಕೆ",
+            "Choosing among alternatives",
+            "Good decision making drives success",
+            "ಉತ್ತಮ ನಿರ್ಣಯ ಯಶಸ್ಸು ಪರಿಚಾಲನ ಮಾಡುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Problem Solving",
+            "ಸಮಸ್ಯೆ ಪರಿಹಾರ",
+            "ಸಮಸ್ಯೆ ವಿಶ್ಲೇಷಣ ಮತ್ತು ಪರಿಹಾರ",
+            "Analyzing and resolving issues",
+            "Effective problem solving saves resources",
+            "ಪರಿಣಾಮಕಾರಿ ಸಮಸ್ಯೆ ಪರಿಹಾರ ಸಂಪತ್ತಿ ರಕ್ಷಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Communication",
+            "ಸಂವಾದ",
+            "ಸಾಲಿನ ಸಂದೇಶ ರವಾನೆ ಮತ್ತು ಗ್ರಹಣ",
+            "Exchanging information effectively",
+            "Effective communication prevents misunderstandings",
+            "ಪರಿಣಾಮಕಾರಿ ಸಂವಾದ ತಿಲಿಮಟ್ಟು ತಿಳಿ ನಿವಾರಿಸುತ್ತದೆ",
+            "Commerce"
+        )
+        add(
+            "Negotiation",
+            "ಸಾಲ ನಿಲಗಮನ",
+            "ಪಕ್ಷಗಳ ಮಧ್ಯೆ ಒಪ್ಪಂದ ಸಾಧನೆ",
+            "Reaching agreement between parties",
+            "Negotiation skills create win-win outcomes",
+            "ನಿಲಗಮನ ಕೌಶಲ್ಯ ಜನಕ-ಜನಕ ಫಲನ ರಚಿಸುತ್ತದೆ",
+            "Commerce"
+        )
 
 
         // --- MATHEMATICS (200 Terms) ---
@@ -3125,7 +3748,7 @@ object PreloadedTerms {
             "Math"
         )
 
-        // Chapter 3: Pair of Linear Equations
+        // Chapter 3: A Pair of Linear Equations
         add(
             "Linear Equation",
             "ರೇಖೀಯ ಸಮೀಕರಣ",
@@ -4282,6 +4905,529 @@ object PreloadedTerms {
             "Events affecting each other",
             "Drawing cards without replacement",
             "ಬದಲಾಗುವುದಿಲ್ಲದೆ ಕಾರ್ಡ್‌ಗಳನ್ನು ಸೆಳೆಯುವುದು",
+            "Math"
+        )
+        // Chapter 16: Additional Math Terms (50 new terms)
+        add(
+            "Geometric Progression",
+            "ಗುಣೋತ್ತರ ಶ್ರೇಣಿ",
+            "ಪರಸ್ಪರ ಸ್ಥಿರ ಅನುಪಾತ ಹೊಂದಿರುವ ಸಂಖ್ಯೆ ವಿಂಗಡಣೆ",
+            "Sequence with constant ratio",
+            "2, 4, 8, 16, ... is a GP",
+            "2, 4, 8, 16, ... ಗುಣೋತ್ತರ ಶ್ರೇಣಿ",
+            "Math"
+        )
+        add(
+            "Common Ratio",
+            "ಸಾಮಾನ್ಯ ಅನುಪಾತ",
+            "GP ನ ಪರಸ್ಪರ ಪದಗಳ ಅನುಪಾತ",
+            "Ratio between consecutive terms in GP",
+            "In 2, 4, 8, common ratio is 2",
+            "2, 4, 8 ನಲ್ಲಿ ಸಾಮಾನ್ಯ ಅನುಪಾತ 2",
+            "Math"
+        )
+        add(
+            "Sum of GP",
+            "GP ಮೊತ್ತ",
+            "Sₙ = a(1-rⁿ)/(1-r) ಸೂತ್ರ",
+            "Formula Sₙ = a(1-rⁿ)/(1-r)",
+            "Calculate sum of GP series",
+            "GP ಶ್ರೇಣಿಯ ಮೊತ್ತ ಲೆಕ್ಕ ಹಾಕಿ",
+            "Math"
+        )
+        add(
+            "Harmonic Progression",
+            "ಸುರ ಶ್ರೇಣಿ",
+            "ಪರಸ್ಪರ ಸಮಾಂತರ ಶ್ರೇಣಿ ರೂಪುಗೊಂಡ ಸಂಖ್ಯೆ",
+            "Reciprocals form AP",
+            "1, 1/2, 1/3, 1/4, ... is HP",
+            "1, 1/2, 1/3, 1/4, ... ಸುರ ಶ್ರೇಣಿ",
+            "Math"
+        )
+        add(
+            "Arithmetic Mean",
+            "ಸಮಾಂತರ ಮಧ್ಯ",
+            "ಎರಡು ಸಂಖ್ಯೆಗಳ ಮಧ್ಯಾವರ್ತಿ",
+            "Average of two numbers",
+            "AM of 4 and 8 is 6",
+            "4 ಮತ್ತು 8 ರ AM 6",
+            "Math"
+        )
+        add(
+            "Geometric Mean",
+            "ಗುಣೋತ್ತರ ಮಧ್ಯ",
+            "ಎರಡು ಸಂಖ್ಯೆಗಳ ವರ್ಗಮೂಲ ಗುಣಲಬ್ಧ",
+            "Square root of product",
+            "GM of 4 and 8 is √32",
+            "4 ಮತ್ತು 8 ರ GM √32",
+            "Math"
+        )
+        add(
+            "Harmonic Mean",
+            "ಸುರ ಮಧ್ಯ",
+            "ಪರಸ್ಪರ ಸರಾಸರಿಯ ಪರಸ್ಪರ",
+            "Reciprocal of mean of reciprocals",
+            "HM formula: 2ab/(a+b)",
+            "HM ಸೂತ್ರ: 2ab/(a+b)",
+            "Math"
+        )
+        add(
+            "Quadrilateral",
+            "ಚತುರ್ಭುಜ",
+            "ನಾಲ್ಕು ಬಾಹುಗಳು ಮತ್ತು ನಾಲ್ಕು ಕೋನಗಳು",
+            "Four-sided polygon",
+            "Rectangle and square are quadrilaterals",
+            "ಆಯತ ಮತ್ತು ಚೌಕ ಚತುರ್ಭುಜಗಳಾಗಿವೆ",
+            "Math"
+        )
+        add(
+            "Parallelogram",
+            "ಸಮಾಂತರ ಚತುರ್ಭುಜ",
+            "ಎದುರು ಬಾಹುಗಳು ಸಮಾಂತರ ಚತುರ್ಭುಜ",
+            "Opposite sides parallel",
+            "Rectangle is a type of parallelogram",
+            "ಆಯತ ಸಮಾಂತರ ಚತುರ್ಭುಜದ ಒಂದು ರೀತಿ",
+            "Math"
+        )
+        add(
+            "Rhombus",
+            "ರಾಂಬಸ್",
+            "ಎಲ್ಲಾ ಬಾಹುಗಳು ಸಮಾನ ಚತುರ್ಭುಜ",
+            "All sides equal quadrilateral",
+            "Diagonals of rhombus bisect at right angles",
+            "ರಾಂಬಸ್‌ನ ಕರ್ಣಗಳು ಲಂಬವಾಗಿ ವಿಭಾಜಿತವಾಗುತ್ತವೆ",
+            "Math"
+        )
+        add(
+            "Trapezium",
+            "ತ್ರಾಪಿಜೋಯಿಡ್",
+            "ಒಂದೇ ಜೋಡಿ ಬಾಹುಗಳು ಸಮಾಂತರ ಚತುರ್ಭುಜ",
+            "One pair of parallel sides",
+            "Area of trapezium = 1/2(a+b)h",
+            "ತ್ರಾಪಿಜೋಯಿಡ್‌ನ ವಿಸ್ತೀರ್ಣ = 1/2(a+b)h",
+            "Math"
+        )
+        add(
+            "Kite",
+            "ಗಾಳಿಪತಂಗ",
+            "ಸನ್ನಿಹಿತ ಎರಡು ಜೋಡಿ ಸಮ ಬಾಹುಗಳು",
+            "Two pairs of adjacent equal sides",
+            "Diagonals of kite are perpendicular",
+            "ಗಾಳಿಪತಂಗದ ಕರ್ಣಗಳು ಲಂಬವಾಗಿರುತ್ತವೆ",
+            "Math"
+        )
+        add(
+            "Tangent-Secant Angle",
+            "ಸ್ಪರ್ಶ-ಛೇದಕ ಕೋನ",
+            "ವೃತ್ತದಲ್ಲಿ ಸ್ಪರ್ಶ ಮತ್ತು ಛೇದಕದಿಂದ ರೂಪುಗೊಂಡ ಕೋನ",
+            "Angle between tangent and secant",
+            "Tangent-secant angle = 1/2 (difference of arcs)",
+            "ಸ್ಪರ್ಶ-ಛೇದಕ ಕೋನ = 1/2 (ಚಾಪಗಳ ವ್ಯತ್ಯಾಸ)",
+            "Math"
+        )
+        add(
+            "Inscribed Angle",
+            "ಆಂತರಿಕ ಕೋನ",
+            "ವೃತ್ತದ ಮೇಲೆ ಶೃಂಗ ಇರುವ ಕೋನ",
+            "Angle with vertex on circle",
+            "Inscribed angle = 1/2 central angle",
+            "ಆಂತರಿಕ ಕೋನ = 1/2 ಕೇಂದ್ರ ಕೋನ",
+            "Math"
+        )
+        add(
+            "Central Angle",
+            "ಕೇಂದ್ರ ಕೋನ",
+            "ವೃತ್ತದ ಕೇಂದ್ರದಲ್ಲಿ ರೂಪುಗೊಂಡ ಕೋನ",
+            "Angle at center of circle",
+            "Central angle and arc have same measure",
+            "ಕೇಂದ್ರ ಕೋನ ಮತ್ತು ಚಾಪ ಒಂದೇ ಮಾತ್ರ",
+            "Math"
+        )
+        add(
+            "Cyclic Quadrilateral Property",
+            "ಚಕ್ರೀಯ ಚತುರ್ಭುಜ ಗುಣ",
+            "ಎದುರು ಕೋನಗಳ ಮೊತ್ತ 180°",
+            "Sum of opposite angles = 180°",
+            "In cyclic quadrilateral ABCD, A+C = 180°",
+            "ಚಕ್ರೀಯ ABCD ನಲ್ಲಿ A+C = 180°",
+            "Math"
+        )
+        add(
+            "Thales Theorem",
+            "ಥೇಲೆಸ್ ಪ್ರಮೇಯ",
+            "ತ್ರಿಕೋನಕ್ಕೆ ಅನುರೂಪವಾದ ಪಕ್ಷ ಮತ್ತು ಪಕ್ಷಗಳ ಸಂಬಂಧ",
+            "If line parallel to base, corresponding sides proportional",
+            "Thales theorem = Basic Proportionality Theorem",
+            "ಥೇಲೆಸ್ ಪ್ರಮೇಯ = ಮೂಲ ಅನುಪಾತತೆ ಪ್ರಮೇಯ",
+            "Math"
+        )
+        add(
+            "Basic Proportionality Theorem",
+            "ಮೂಲ ಅನುಪಾತತೆ ಪ್ರಮೇಯ",
+            "ತ್ರಿಕೋನದಲ್ಲಿ ಸಮಾಂತರ ರೇಖೆ ಪರಿಸ್ಥಿತಿ",
+            "If line parallel to one side divides other sides proportionally",
+            "AB/AC = BD/DC when line DE parallel to BC",
+            "DE BC ಗೆ ಸಮಾಂತರವಾದಾಗ AB/AC = BD/DC",
+            "Math"
+        )
+        add(
+            "Angle Bisector Theorem",
+            "ಕೋನ ದ್ವಿಭಾಜಕ ಪ್ರಮೇಯ",
+            "ಕೋನ ದ್ವಿಭಾಜಕ ಎದುರು ಬಾಹುವನ್ನು ವಿಭಾಗಿಸುವುದು",
+            "Angle bisector divides opposite side proportionally",
+            "AD/DC = AB/BC when AD bisects angle A",
+            "AD ∠A ದ್ವಿಭಾಜಿತವಾದಾಗ AD/DC = AB/BC",
+            "Math"
+        )
+        add(
+            "Apollonius Theorem",
+            "ಅಪೊಲೋನಿಯಸ್ ಪ್ರಮೇಯ",
+            "ತ್ರಿಕೋನದಿಂದ ಮಧ್ಯಮ ಸಂಬಂಧ",
+            "Relation between sides and median",
+            "AB² + AC² = 2(AD² + BD²)",
+            "AB² + AC² = 2(AD² + BD²) ಜೆ AD ಮಧ್ಯಮ",
+            "Math"
+        )
+        add(
+            "Stewart Theorem",
+            "ಸ್ಟೆವರ್ಟ್ ಪ್ರಮೇಯ",
+            "ತ್ರಿಕೋನದೊಳಗೆ ರೇಖೆ ಸೆಲುಕುಮಿತ ಸಂಬಂಧ",
+            "Relation for cevian in triangle",
+            "b²·m + c²·n - a(mn) = p²a",
+            "ಸಂಕೀರ್ಣ ಸಂಬಂಧ ವಿವರಣೆ ಪುಸ್ತಕದಲ್ಲಿ",
+            "Math"
+        )
+        add(
+            "Isosceles Triangle",
+            "ಸಮಬಾಹು ತ್ರಿಕೋನ",
+            "ಎರಡು ಬಾಹುಗಳು ಸಮಾನ ತ್ರಿಕೋನ",
+            "Two sides equal",
+            "In isosceles triangle, base angles are equal",
+            "ಸಮಬಾಹು ತ್ರಿಕೋನದಲ್ಲಿ ಮೂಲ ಕೋನಗಳು ಸಮಾನ",
+            "Math"
+        )
+        add(
+            "Equilateral Triangle",
+            "ಸಮದ್ವಿಬಾಹು ತ್ರಿಕೋನ",
+            "ಮೂರು ಬಾಹುಗಳು ಸಮಾನ ತ್ರಿಕೋನ",
+            "All three sides equal",
+            "Area of equilateral triangle = (√3/4)a²",
+            "ಸಮಬಾಹು ತ್ರಿಕೋನದ ವಿಸ್ತೀರ್ಣ = (√3/4)a²",
+            "Math"
+        )
+        add(
+            "Scalene Triangle",
+            "ವಿಷಮಬಾಹು ತ್ರಿಕೋನ",
+            "ಮೂರು ಬಾಹುಗಳು ಭಿನ್ನ ಉದ್ದ ತ್ರಿಕೋನ",
+            "All sides different lengths",
+            "Scalene triangle has no equal angles",
+            "ವಿಷಮಬಾಹು ತ್ರಿಕೋನಗೆ ಯಾವುದೇ ಸಮಾನ ಕೋನ ಇಲ್ಲ",
+            "Math"
+        )
+        add(
+            "Acute Triangle",
+            "ತೀಕ್ಷ್ಣ ತ್ರಿಕೋನ",
+            "ಎಲ್ಲಾ ಕೋನಗಳು 90° ಕ್ಕಿಂತ ಕಡಿಮೆ",
+            "All angles less than 90°",
+            "In acute triangle, all angles are acute",
+            "ತೀಕ್ಷ್ಣ ತ್ರಿಕೋನದಲ್ಲಿ ಎಲ್ಲಾ ಕೋನಗಳು ತೀಕ್ಷ್ಣ",
+            "Math"
+        )
+        add(
+            "Obtuse Triangle",
+            "ವಿತಸ್ರ ತ್ರಿಕೋನ",
+            "ಒಂದು ಕೋನ 90° ಕ್ಕಿಂತ ಹೆಚ್ಚು",
+            "One angle greater than 90°",
+            "In obtuse triangle, one angle is obtuse",
+            "ವಿತಸ್ರ ತ್ರಿಕೋನದಲ್ಲಿ ಒಂದು ಕೋನ ವಿತಸ್ರ",
+            "Math"
+        )
+        add(
+            "Right Triangle",
+            "ಲಂಬಕೋನ ತ್ರಿಕೋನ",
+            "ಒಂದು ಕೋನ ನಿಖರವಾಗಿ 90°",
+            "One angle exactly 90°",
+            "Pythagoras theorem applies to right triangles",
+            "ಪೈಥಾಗೋರಸ್ ಪ್ರಮೇಯ ಲಂಬಕೋನ ತ್ರಿಕೋನಗಳಿಗೆ ಅನ್ವಯಿಸುತ್ತದೆ",
+            "Math"
+        )
+        add(
+            "Congruence Criteria",
+            "ಸರ್ವಸಮತೆ ಮಾನದಂಡ",
+            "ತ್ರಿಕೋನಗಳ ಸರ್ವಸಮತೆ ಪರೀಕ್ಷೆ",
+            "SSS, SAS, ASA, RHS criteria",
+            "Four congruence criteria for triangles",
+            "ತ್ರಿಕೋನಗಳಿಗೆ ನಾಲ್ಕು ಸರ್ವಸಮತೆ ಮಾನದಂಡ",
+            "Math"
+        )
+        add(
+            "Similarity Criteria",
+            "ಸಮರೂಪತೆ ಮಾನದಂಡ",
+            "ತ್ರಿಕೋನಗಳ ಸಮರೂಪತೆ ಪರೀಕ್ಷೆ",
+            "AA, SSS, SAS similarity criteria",
+            "Three similarity criteria for triangles",
+            "ತ್ರಿಕೋನಗಳಿಗೆ ಮೂರು ಸಮರೂಪತೆ ಮಾನದಂಡ",
+            "Math"
+        )
+        add(
+            "Circumradius",
+            "ಪರಿವೃತ್ತ ತ್ರಿಜ್ಯೆ",
+            "ತ್ರಿಕೋನದ ಸುತ್ತ ಸುತ್ತುವ ವೃತ್ತದ ತ್ರಿಜ್ಯೆ",
+            "Radius of circumscribed circle",
+            "R = abc/(4K) where K is area",
+            "R = abc/(4K) ಇಲ್ಲಿ K ವಿಸ್ತೀರ್ಣ",
+            "Math"
+        )
+        add(
+            "Inradius",
+            "ಅಂತರ್ವೃತ್ತ ತ್ರಿಜ್ಯೆ",
+            "ತ್ರಿಕೋನದ ಒಳಗೆ ಎಂದುಕೊಂಡ ವೃತ್ತದ ತ್ರಿಜ್ಯೆ",
+            "Radius of inscribed circle",
+            "r = K/s where K is area and s is semiperimeter",
+            "r = K/s ಇಲ್ಲಿ K ವಿಸ್ತೀರ್ಣ ಮತ್ತು s ಅರ್ಧ ಪರಿಧಿ",
+            "Math"
+        )
+        add(
+            "Semiperimeter",
+            "ಅರ್ಧ ಪರಿಧಿ",
+            "ತ್ರಿಕೋನ ಪರಿಧಿಯ ಅರ್ಧ s = (a+b+c)/2",
+            "Half of perimeter",
+            "s = (a+b+c)/2",
+            "s = (a+b+c)/2",
+            "Math"
+        )
+        add(
+            "Heron's Formula",
+            "ಹೆರಾನ್‌ನ ಸೂತ್ರ",
+            "ತ್ರಿಕೋನ ವಿಸ್ತೀರ್ಣ ತ್ರೈ ಬಾಹುವಿಂದ",
+            "Area = √[s(s-a)(s-b)(s-c)]",
+            "Calculate area using three sides",
+            "ಮೂರು ಬಾಹುವಿಂದ ವಿಸ್ತೀರ್ಣ ಲೆಕ್ಕ ಹಾಕಿ",
+            "Math"
+        )
+        add(
+            "Cosine Rule",
+            "ಕೊಸೈನ್ ಪ್ರಮೇಯ",
+            "c² = a² + b² - 2ab cos C",
+            "c² = a² + b² - 2ab cos C",
+            "Find side using angle and two sides",
+            "ಕೋನ ಮತ್ತು ಎರಡು ಬಾಹುವಿಂದ ಬಾಹು ಕಂಡುಹಿಡಿಯಿರಿ",
+            "Math"
+        )
+        add(
+            "Sine Rule",
+            "ಸೈನ್ ಪ್ರಮೇಯ",
+            "a/sin A = b/sin B = c/sin C",
+            "a/sin A = b/sin B = c/sin C",
+            "Relate sides and angles",
+            "ಬಾಹುಗಳು ಮತ್ತು ಕೋನಗಳು ಸಂಬಂಧಿತವಾಗುತ್ತವೆ",
+            "Math"
+        )
+        add(
+            "Projection Formula",
+            "ಪ್ರಕ್ಷೇಪ ಸೂತ್ರ",
+            "a = b cos C + c cos B",
+            "a = b cos C + c cos B",
+            "Projection of sides",
+            "ಬಾಹುವಿನ ಪ್ರಕ್ಷೇಪ",
+            "Math"
+        )
+        add(
+            "Pedal Triangle",
+            "ತುದಿ ತ್ರಿಕೋನ",
+            "ಬಿಂದುವಿಂದ ತ್ರಿಕೋನ ಬಾಹುವಿಗೆ ಪೂರ್ವೆ",
+            "Triangle formed by perpendiculars",
+            "Pedal triangle of orthocenter",
+            "ಲಂಬ ಕೇಂದ್ರದ ತುದಿ ತ್ರಿಕೋನ",
+            "Math"
+        )
+        add(
+            "Orthocenter",
+            "ಲಂಬ ಕೇಂದ್ರ",
+            "ತ್ರಿಕೋನ ಮೂರು ಲಂಬೀಕರಣದ ಛೇದಕ",
+            "Intersection of altitudes",
+            "Orthocenter of acute triangle is inside",
+            "ತೀಕ್ಷ್ಣ ತ್ರಿಕೋನದ ಲಂಬ ಕೇಂದ್ರ ಒಳಗೆ",
+            "Math"
+        )
+        add(
+            "Circumcenter",
+            "ಪರಿವೃತ್ತ ಕೇಂದ್ರ",
+            "ತ್ರಿಕೋನ ಮೂರು ಲಂಬ ದ್ವಿಭಾಜಕದ ಛೇದಕ",
+            "Intersection of perpendicular bisectors",
+            "Circumcenter is equidistant from vertices",
+            "ಪರಿವೃತ್ತ ಕೇಂದ್ರ ಶೃಂಗಗಳಿಂದ ಸಮದೂರ",
+            "Math"
+        )
+        add(
+            "Incenter",
+            "ಅಂತರ್ವೃತ್ತ ಕೇಂದ್ರ",
+            "ತ್ರಿಕೋನ ಮೂರು ಕೋನ ದ್ವಿಭಾಜಕದ ಛೇದಕ",
+            "Intersection of angle bisectors",
+            "Incenter is equidistant from sides",
+            "ಅಂತರ್ವೃತ್ತ ಕೇಂದ್ರ ಬಾಹುವಿಂದ ಸಮದೂರ",
+            "Math"
+        )
+        add(
+            "Excenter",
+            "ಬಾಹ್ಯ ಕೇಂದ್ರ",
+            "ಬಾಹ್ಯ ವೃತ್ತದ ಕೇಂದ್ರ",
+            "Center of excircle",
+            "Triangle has three excenters",
+            "ತ್ರಿಕೋನಕ್ಕೆ ಮೂರು ಬಾಹ್ಯ ಕೇಂದ್ರಗಳಿವೆ",
+            "Math"
+        )
+        add(
+            "Euler Line",
+            "ಯೂಲರ್ ರೇಖೆ",
+            "ಲಂಬ ಕೇಂದ್ರ, ಸೇಂಟ್ರಾಯಿಡ್, ಪರಿವೃತ್ತ ಕೇಂದ್ರ ಹಾದುಹೋಗುವ ರೇಖೆ",
+            "Line through orthocenter, centroid, circumcenter",
+            "Euler line is collinear with special centers",
+            "ಯೂಲರ್ ರೇಖೆ ವಿಶೇಷ ಕೇಂದ್ರಗಳ ಸಾಲುನಿಯೆ",
+            "Math"
+        )
+        add(
+            "Nine-point Circle",
+            "ಒಂಬತ್ತು ಬಿಂದು ವೃತ್ತ",
+            "ನಿರ್ದಿಷ್ಟ ನೂಲ್ಬತ್ತು ಬಿಂದುಗಳ ಮಧ್ಯೆ ಹಾದುಹೋಗುವ ವೃತ್ತ",
+            "Circle through nine special points",
+            "Radius of nine-point circle = R/2",
+            "ನೂಬತ್ತು ಬಿಂದು ವೃತ್ತ ತ್ರಿಜ್ಯೆ = R/2",
+            "Math"
+        )
+        add(
+            "Trigonometric Identities",
+            "ತ್ರಿಕೋಣಮಿತೀಯ ಅನ್ವಯ",
+            "sin²θ + cos²θ = 1 ಮತ್ತು ಸಂಬಂಧಿತ ಅನ್ವಯ",
+            "Fundamental trigonometric identities",
+            "sin²θ + cos²θ = 1, 1 + tan²θ = sec²θ",
+            "ಮೌಲಿಕ ತ್ರಿಕೋಣಮಿತೀಯ ಸರ್ವಸಮತೆ",
+            "Math"
+        )
+        add(
+            "Addition Formulas",
+            "ಸಂಕಲನ ಸೂತ್ರ",
+            "sin(A+B) = sinA cosB + cosA sinB",
+            "sin(A+B) = sinA cosB + cosA sinB",
+            "Formulas for sum of angles",
+            "ಕೋನದ ಮೊತ್ತದ ಸೂತ್ರ",
+            "Math"
+        )
+        add(
+            "Subtraction Formulas",
+            "ವ್ಯವಕಲನ ಸೂತ್ರ",
+            "sin(A-B) = sinA cosB - cosA sinB",
+            "sin(A-B) = sinA cosB - cosA sinB",
+            "Formulas for difference of angles",
+            "ಕೋನದ ವ್ಯತ್ಯಾಸದ ಸೂತ್ರ",
+            "Math"
+        )
+        add(
+            "Double Angle Formulas",
+            "ದ್ವಿ-ಕೋನ ಸೂತ್ರ",
+            "sin 2θ = 2 sin θ cos θ",
+            "sin 2θ = 2 sin θ cos θ",
+            "Formulas for double angles",
+            "ದ್ವಿಗುಣ ಕೋನದ ಸೂತ್ರ",
+            "Math"
+        )
+        add(
+            "Half Angle Formulas",
+            "ಅರ್ಧ-ಕೋನ ಸೂತ್ರ",
+            "sin(θ/2) = √[(1-cosθ)/2]",
+            "sin(θ/2) = √[(1-cosθ)/2]",
+            "Formulas for half angles",
+            "ಅರ್ಧ ಕೋನದ ಸೂತ್ರ",
+            "Math"
+        )
+        add(
+            "Product to Sum",
+            "ಗುಣಲಬ್ಧ ಸಂಕಲನ",
+            "2 sin A cos B = sin(A+B) + sin(A-B)",
+            "2 sin A cos B = sin(A+B) + sin(A-B)",
+            "Convert product to sum",
+            "ಗುಣಲಬ್ಧವನ್ನು ಸಂಕಲನಕ್ಕೆ ಪರಿವರ್ತಿಸಿ",
+            "Math"
+        )
+        add(
+            "Sum to Product",
+            "ಸಂಕಲನ ಗುಣಲಬ್ಧ",
+            "sin A + sin B = 2 sin[(A+B)/2] cos[(A-B)/2]",
+            "sin A + sin B = 2 sin[(A+B)/2] cos[(A-B)/2]",
+            "Convert sum to product",
+            "ಸಂಕಲನವನ್ನು ಗುಣಲಬ್ಧಕ್ಕೆ ಪರಿವರ್ತಿಸಿ",
+            "Math"
+        )
+        add(
+            "Inverse Trigonometric Functions",
+            "ವಿಲೋಮ ತ್ರಿಕೋಣಮಿತೀಯ ಕಾರ್ಯ",
+            "sin⁻¹x, cos⁻¹x, tan⁻¹x ಕಾರ್ಯ",
+            "sin⁻¹, cos⁻¹, tan⁻¹ functions",
+            "Domain and range of inverse functions",
+            "ವಿಲೋಮ ಕಾರ್ಯಗಳ ಪ್ರದೇಶ ಮತ್ತು ಮೌಲ್ಯಗಳು",
+            "Math"
+        )
+        add(
+            "Parametric Equations",
+            "ಪಾರಾಮೀಟರಿಕ ಸಮೀಕರಣ",
+            "x = r cos θ, y = r sin θ",
+            "x = r cos θ, y = r sin θ",
+            "Express curves using parameters",
+            "ಪಾರಾಮೀಟರ ಬಳಸಿ ವಕ್ರಗಳ ವ್ಯಕ್ತಿ",
+            "Math"
+        )
+        add(
+            "Vector Addition",
+            "ವೆಕ್ಟರ್ ಸಂಕಲನ",
+            "Parallelogram law for vector addition",
+            "Add vectors using head-to-tail method",
+            "used in vector addition",
+            "ವೆಕ್ಟರ್‌ಗಳನ್ನು ಸಂಕಲನ ಮಾಡಿ",
+            "Math"
+        )
+        add(
+            "Scalar Product",
+            "ಸ್ಕೇಲರ್ ಗುಣಲಬ್ಧ",
+            "A·B = |A||B| cos θ",
+            "A·B = |A||B| cos θ",
+            "Dot product of vectors",
+            "ವೆಕ್ಟರ್‌ಗಳ ಡಾಟ್ ಗುಣಲಬ್ಧ",
+            "Math"
+        )
+        add(
+            "Vector Product",
+            "ವೆಕ್ಟರ್ ಗುಣಲಬ್ಧ",
+            "A×B = |A||B| sin θ n̂",
+            "A×B = |A||B| sin θ n̂",
+            "Cross product of vectors",
+            "ವೆಕ್ಟರ್‌ಗಳ ಕ್ರಾಸ್ ಗುಣಲಬ್ಧ",
+            "Math"
+        )
+        add(
+            "Complex Numbers",
+            "ಸಮ್ಮಿಶ್ರ ಸಂಖ್ಯೆ",
+            "a + ib ಸ್ವರೂಪದ ಸಂಖ್ಯೆ",
+            "Numbers of form a + ib",
+            "Imaginary unit i² = -1",
+            "ಕಾಲ್ಪನಿಕ ಇಕಾಯಿ i² = -1",
+            "Math"
+        )
+        add(
+            "Modulus and Argument",
+            "ಮಾಡುಲಸ್ ಮತ್ತು ವಾದ",
+            "|z| = √(a² + b²), arg(z) = tan⁻¹(b/a)",
+            "|z| = √(a² + b²), arg(z) = tan⁻¹(b/a)",
+            "Polar form of complex number",
+            "ಸಮ್ಮಿಶ್ರ ಸಂಖ್ಯೆಯ ಧ್ರುವ ರೂಪ",
+            "Math"
+        )
+        add(
+            "De Moivre's Theorem",
+            "ಡಿ ಮೊಯಿವರ್ ಪ್ರಮೇಯ",
+            "(cos θ + i sin θ)ⁿ = cos nθ + i sin nθ",
+            "(cos θ + i sin θ)ⁿ = cos nθ + i sin nθ",
+            "Power of complex numbers",
+            "ಸಮ್ಮಿಶ್ರ ಸಂಖ್ಯೆಗಳ ಶಕ್ತಿ",
             "Math"
         )
 

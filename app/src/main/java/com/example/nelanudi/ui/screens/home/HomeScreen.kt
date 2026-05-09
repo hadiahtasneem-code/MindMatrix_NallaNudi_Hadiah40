@@ -37,7 +37,7 @@ import com.example.nelanudi.utils.TTSManager
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomeScreen(vm: HomeViewModel = viewModel()) {
+fun HomeScreen(vm: HomeViewModel = viewModel(), onNavigateToSaved: () -> Unit = {}) {
     val state by vm.uiState.collectAsStateWithLifecycle()
     val wordOfDay by vm.wordOfDay.collectAsStateWithLifecycle()
     var selectedTermId by remember { mutableStateOf<Int?>(null) }
@@ -68,7 +68,7 @@ fun HomeScreen(vm: HomeViewModel = viewModel()) {
     ) {
         // Header
         item(contentType = "header") {
-            HomeHeader()
+            HomeHeader(onNavigateToSaved)
         }
 
         // Search Bar
@@ -131,7 +131,7 @@ fun HomeScreen(vm: HomeViewModel = viewModel()) {
 }
 
 @Composable
-private fun HomeHeader() {
+private fun HomeHeader(onNavigateToSaved: () -> Unit) {
     Row(
         modifier = Modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.SpaceBetween,
@@ -164,7 +164,7 @@ private fun HomeHeader() {
             }
         }
         IconButton(
-            onClick = { /* TODO: Open bookmarks or navigate to Saved */ },
+            onClick = onNavigateToSaved,
             modifier = Modifier
                 .size(44.dp)
                 .clip(CircleShape)
@@ -239,7 +239,11 @@ private fun SubjectFilterSection(selectedSubject: String, isDark: Boolean, onSub
         )
         Spacer(modifier = Modifier.height(12.dp))
         LazyRow(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-            items(filters, key = { it.label }) { filter ->
+            items(
+                items = filters, 
+                key = { it.label },
+                contentType = { "filter_chip" }
+            ) { filter ->
                 SubjectChip(
                     filter = filter,
                     isSelected = selectedSubject == filter.label,
