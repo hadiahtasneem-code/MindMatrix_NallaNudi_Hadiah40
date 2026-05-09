@@ -70,14 +70,30 @@ class HomeViewModel(app: Application) : AndroidViewModel(app) {
     init {
         viewModelScope.launch {
             // Seed DB if it's the first run or if data is missing
-            val count = repo.getCount()
-            // Check for a specific term at the end of the new list to trigger update
-            val isFullyUpdated = repo.exists("Dependent Events")
+            val existing = repo.getAll().first()
+            val count = existing.size
+            val isFullyUpdated = existing.any { it.englishWord == "Dependent Events" }
             
             // Re-seed if data is missing or if the new 600-word list isn't fully loaded
             if (count < 600 || !isFullyUpdated) {
+                // 1. Remember which technical words the user has already saved
+                val savedWords = existing.filter { it.isSaved }.map { it.englishWord }.toSet()
+
                 repo.clearAll()
-                repo.insertAll(com.example.nelanudi.data.local.database.PreloadedTerms.get())
+                
+                // 2. Load the fresh 600-word list from PreloadedTerms
+                val preloaded = com.example.nelanudi.data.local.database.PreloadedTerms.get()
+                
+                // 3. Restore the 'saved' status for those words in the new list
+                val listToInsert = preloaded.map { term ->
+                    if (savedWords.contains(term.englishWord)) {
+                        term.copy(isSaved = true)
+                    } else {
+                        term
+                    }
+                }
+                
+                repo.insertAll(listToInsert)
             }
 
             loadWordOfDay()

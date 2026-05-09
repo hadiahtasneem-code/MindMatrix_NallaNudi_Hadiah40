@@ -1,6 +1,6 @@
 package com.example.nelanudi.ui.screens.quiz
 
-import androidx.compose.animation.*
+import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.List
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -35,11 +36,11 @@ fun QuizScreen(vm: HomeViewModel = viewModel(), onBack: () -> Unit = {}) {
     var flipped by remember { mutableStateOf(false) }
     var isSessionComplete by remember { mutableStateOf(false) }
     
-    val list = state.results.take(10) // Limit to 10 for practice
+    val list = remember(state.results) { state.results.take(15) } // Show more for practice
     
     if (list.isEmpty()) {
         Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-            Text("No terms available for quiz")
+            Text("No terms saved for practice yet")
         }
         return
     }
@@ -84,8 +85,8 @@ fun QuizScreen(vm: HomeViewModel = viewModel(), onBack: () -> Unit = {}) {
                 Icon(Icons.Default.Close, contentDescription = null, tint = MaterialTheme.colorScheme.onBackground)
             }
             Text(
-                text = "Practice",
-                style = MaterialTheme.typography.titleLarge.copy(color = MaterialTheme.colorScheme.onBackground)
+                text = "Revision",
+                style = MaterialTheme.typography.titleLarge.copy(color = MaterialTheme.colorScheme.onBackground, fontWeight = FontWeight.Bold)
             )
             Text(
                 text = "${index + 1} / ${list.size}",
@@ -102,18 +103,18 @@ fun QuizScreen(vm: HomeViewModel = viewModel(), onBack: () -> Unit = {}) {
 
         Spacer(modifier = Modifier.height(24.dp))
         
-                Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
-                    Row(verticalAlignment = Alignment.CenterVertically) {
-                        Surface(modifier = Modifier.size(8.dp), shape = CircleShape, color = ColorSuccess) {}
-                        Spacer(modifier = Modifier.width(8.dp))
-                        Text("${index} Mastered", style = MaterialTheme.typography.labelSmall.copy(color = ColorSuccess))
-                    }
-                    Row(verticalAlignment = Alignment.CenterVertically) {
-                        Surface(modifier = Modifier.size(8.dp), shape = CircleShape, color = PrimarySky) {}
-                        Spacer(modifier = Modifier.width(8.dp))
-                        Text("${(PreferencesManager.getRevisionCount(LocalContext.current))} Need Practice", style = MaterialTheme.typography.labelSmall.copy(color = PrimarySky))
-                    }
-                }
+        Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Surface(modifier = Modifier.size(8.dp), shape = CircleShape, color = ColorSuccess) {}
+                Spacer(modifier = Modifier.width(8.dp))
+                Text("$index Mastered", style = MaterialTheme.typography.labelSmall.copy(color = ColorSuccess))
+            }
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Surface(modifier = Modifier.size(8.dp), shape = CircleShape, color = PrimarySky) {}
+                Spacer(modifier = Modifier.width(8.dp))
+                Text("${list.size - index} Remaining", style = MaterialTheme.typography.labelSmall.copy(color = PrimarySky))
+            }
+        }
 
         Spacer(modifier = Modifier.weight(1f))
 
@@ -121,7 +122,7 @@ fun QuizScreen(vm: HomeViewModel = viewModel(), onBack: () -> Unit = {}) {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .aspectRatio(0.8f)
+                .aspectRatio(0.85f)
                 .graphicsLayer {
                     rotationY = rotation
                     cameraDistance = 12f * density
@@ -129,29 +130,75 @@ fun QuizScreen(vm: HomeViewModel = viewModel(), onBack: () -> Unit = {}) {
                 .clickable { flipped = !flipped }
         ) {
             if (rotation <= 90f) {
-                FlashcardFace(
-                    text = term.englishWord,
-                    subtext = "English Word",
-                    bgColor = MaterialTheme.colorScheme.surface,
-                    textColor = MaterialTheme.colorScheme.onSurface
-                )
+                // Front Side
+                Card(
+                    modifier = Modifier.fillMaxSize(),
+                    shape = RoundedCornerShape(32.dp),
+                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+                    elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
+                ) {
+                    Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.padding(24.dp)) {
+                            Text(
+                                text = "English Word",
+                                style = MaterialTheme.typography.labelLarge.copy(color = MaterialTheme.colorScheme.outline)
+                            )
+                            Spacer(modifier = Modifier.height(16.dp))
+                            Text(
+                                text = term.englishWord,
+                                style = MaterialTheme.typography.displayMedium.copy(
+                                    fontWeight = FontWeight.Bold,
+                                    color = MaterialTheme.colorScheme.onSurface
+                                ),
+                                textAlign = androidx.compose.ui.text.style.TextAlign.Center
+                            )
+                            Spacer(modifier = Modifier.height(32.dp))
+                            Text(
+                                text = "Tap to flip 🔄",
+                                style = MaterialTheme.typography.labelSmall.copy(color = MaterialTheme.colorScheme.outline.copy(alpha = 0.6f))
+                            )
+                        }
+                    }
+                }
             } else {
-                // Back side: show Kannada details and explanation
+                // Back side (Subject Color)
+                val backColor = remember(term.subject) {
+                    when (term.subject) {
+                        "Science" -> ColorScience
+                        "Math" -> ColorMath
+                        else -> ColorCommerce
+                    }
+                }
+
                 Card(
                     modifier = Modifier.fillMaxSize().graphicsLayer { rotationY = 180f },
                     shape = RoundedCornerShape(32.dp),
-                    colors = CardDefaults.cardColors(containerColor = PrimaryDeep),
+                    colors = CardDefaults.cardColors(containerColor = backColor),
                     elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
                 ) {
                     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                        Column(modifier = Modifier.padding(16.dp)) {
-                            Text(text = term.kannadaMeaning, style = MaterialTheme.typography.headlineMedium.copy(color = Color.White, fontWeight = FontWeight.Bold))
-                            Spacer(modifier = Modifier.height(8.dp))
-                            Text(text = "Pronunciation: ${term.pronunciation}", style = MaterialTheme.typography.bodyMedium.copy(color = Color.White.copy(alpha = 0.9f)))
-                            Spacer(modifier = Modifier.height(8.dp))
-                            Text(text = term.kannadaDefinition, style = MaterialTheme.typography.bodyLarge.copy(color = Color.White))
+                        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.padding(24.dp)) {
+                            Text(
+                                text = term.subject,
+                                style = MaterialTheme.typography.labelLarge.copy(color = Color.White.copy(alpha = 0.7f))
+                            )
+                            Spacer(modifier = Modifier.height(16.dp))
+                            Text(
+                                text = term.kannadaMeaning, 
+                                style = MaterialTheme.typography.headlineLarge.copy(color = Color.White, fontWeight = FontWeight.Bold),
+                                textAlign = androidx.compose.ui.text.style.TextAlign.Center
+                            )
                             Spacer(modifier = Modifier.height(12.dp))
-                            Text(text = "Example: ${term.exampleUsage}", style = MaterialTheme.typography.bodySmall.copy(color = Color.White.copy(alpha = 0.9f)))
+                            Text(
+                                text = term.kannadaDefinition, 
+                                style = MaterialTheme.typography.bodyLarge.copy(color = Color.White, lineHeight = 24.sp),
+                                textAlign = androidx.compose.ui.text.style.TextAlign.Center
+                            )
+                            Spacer(modifier = Modifier.height(24.dp))
+                            Text(
+                                text = "Tap to flip 🔄",
+                                style = MaterialTheme.typography.labelSmall.copy(color = Color.White.copy(alpha = 0.6f))
+                            )
                         }
                     }
                 }
@@ -167,7 +214,6 @@ fun QuizScreen(vm: HomeViewModel = viewModel(), onBack: () -> Unit = {}) {
         ) {
             Button(
                 onClick = { 
-                    // Mark mastered and advance
                     vm.markPracticed(term, mastered = true)
                     if (index < list.size - 1) {
                         index++
@@ -185,7 +231,6 @@ fun QuizScreen(vm: HomeViewModel = viewModel(), onBack: () -> Unit = {}) {
             
             OutlinedButton(
                 onClick = { 
-                    // Mark as needs practice (not mastered) and advance
                     vm.markPracticed(term, mastered = false)
                     if (index < list.size - 1) {
                         index++
@@ -199,33 +244,6 @@ fun QuizScreen(vm: HomeViewModel = viewModel(), onBack: () -> Unit = {}) {
                 border = ButtonDefaults.outlinedButtonBorder.copy(width = 2.dp)
             ) {
                 Text("Next")
-            }
-        }
-    }
-}
-
-@Composable
-fun FlashcardFace(text: String, subtext: String, bgColor: Color, textColor: Color, modifier: Modifier = Modifier) {
-    Card(
-        modifier = modifier.fillMaxSize(),
-        shape = RoundedCornerShape(32.dp),
-        colors = CardDefaults.cardColors(containerColor = bgColor),
-        elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
-    ) {
-        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-            Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                Text(
-                    text = subtext,
-                    style = MaterialTheme.typography.labelLarge.copy(color = textColor.copy(alpha = 0.6f))
-                )
-                Spacer(modifier = Modifier.height(16.dp))
-                Text(
-                    text = text,
-                    style = MaterialTheme.typography.displayMedium.copy(
-                        fontWeight = FontWeight.Bold,
-                        color = textColor
-                    )
-                )
             }
         }
     }
@@ -303,7 +321,7 @@ fun SessionCompleteScreen(total: Int, onRestart: () -> Unit, onBack: () -> Unit)
             modifier = Modifier.fillMaxWidth().height(56.dp),
             shape = RoundedCornerShape(28.dp)
         ) {
-            Icon(Icons.Default.List, contentDescription = null)
+            Icon(Icons.AutoMirrored.Filled.List, contentDescription = null)
             Spacer(modifier = Modifier.width(8.dp))
             Text("Back to List")
         }

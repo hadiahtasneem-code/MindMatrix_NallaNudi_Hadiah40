@@ -1,10 +1,8 @@
 package com.example.nelanudi.ui.screens.saved
 
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -39,7 +37,8 @@ fun SavedScreen(
 ) {
     val state by vm.uiState.collectAsStateWithLifecycle()
     var selectedTerm by remember { mutableStateOf<Term?>(null) }
-    val savedTerms = state.results.filter { it.isSaved }
+    val savedTerms = remember(state.results) { state.results.filter { it.isSaved } }
+    val isDark = isSystemInDarkTheme()
 
     Scaffold(
         topBar = {
@@ -112,11 +111,17 @@ fun SavedScreen(
                     contentPadding = PaddingValues(16.dp),
                     verticalArrangement = Arrangement.spacedBy(12.dp)
                 ) {
-                    items(savedTerms, key = { it.id }) { term ->
+                    items(
+                        items = savedTerms, 
+                        key = { it.id },
+                        contentType = { "saved_item" }
+                    ) { term ->
                         SavedTermItem(
                             term = term,
-                            onClick = { selectedTerm = term }
-                        ) { vm.toggleSaved(term) }
+                            isDark = isDark,
+                            onClick = { selectedTerm = term },
+                            onUnsave = { vm.toggleSaved(term) }
+                        )
                     }
                 }
             }
@@ -142,19 +147,24 @@ fun SavedScreen(
 @Composable
 fun SavedTermItem(
     term: Term,
+    isDark: Boolean,
     onClick: () -> Unit,
     onUnsave: () -> Unit
 ) {
-    val subjectColor = when (term.subject) {
-        "Science" -> ColorScience
-        "Math" -> ColorMath
-        else -> ColorCommerce
+    val subjectColor = remember(term.subject) {
+        when (term.subject) {
+            "Science" -> ColorScience
+            "Math" -> ColorMath
+            else -> ColorCommerce
+        }
     }
     
-    val subjectBg = when (term.subject) {
-        "Science" -> ColorScienceLight
-        "Math" -> ColorMathLight
-        else -> ColorCommerceLight
+    val subjectBg = remember(term.subject, isDark) {
+        when (term.subject) {
+            "Science" -> if (isDark) ColorScience.copy(alpha = 0.2f) else ColorScienceLight
+            "Math" -> if (isDark) ColorMath.copy(alpha = 0.2f) else ColorMathLight
+            else -> if (isDark) ColorCommerce.copy(alpha = 0.2f) else ColorCommerceLight
+        }
     }
 
     Card(
