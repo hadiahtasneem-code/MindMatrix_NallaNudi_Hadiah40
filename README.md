@@ -6,44 +6,62 @@
 <img src="https://img.shields.io/badge/Platform-Android-green?style=for-the-badge">
 <img src="https://img.shields.io/badge/Language-Kotlin-purple?style=for-the-badge">
 <img src="https://img.shields.io/badge/Database-RoomDB-blue?style=for-the-badge">
-<img src="https://img.shields.io/badge/Mode-Offline-orange?style=for-the-badge">
+<img src="https://img.shields.io/badge/Offline-Supported-orange?style=for-the-badge">
+<img src="https://img.shields.io/badge/UI-XML-red?style=for-the-badge">
+<img src="https://img.shields.io/badge/Architecture-MVVM-yellow?style=for-the-badge">
+<img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
 
 </div>
 
 ---
 
-# 📖 Overview
+# 📖 About Nalla-Nudi
 
-Nalla-Nudi is an offline Android application developed to help Kannada-medium students transition smoothly into English-medium higher education.
+Nalla-Nudi is an offline Android application designed to help Kannada-medium students transition smoothly into English-medium higher education.
 
-Many rural students understand concepts clearly in Kannada but struggle with English technical vocabulary used in:
+Many students from rural and regional-language backgrounds understand concepts clearly in Kannada but struggle with English technical vocabulary used in:
 - Science
 - Mathematics
 - Commerce
 - Computer Science
+- Engineering Subjects
 
-The application acts as a **Bridge Dictionary for Technical Terms** by providing:
+Nalla-Nudi acts as a **Bridge Dictionary for Technical Terms** by providing:
 - English technical words
 - Kannada meanings
 - Simple explanations
-- Pronunciation support
 - Subject-wise learning
+- Pronunciation support
+- Flashcard-based revision
 
-Nalla-Nudi is designed as a confidence-building educational tool that removes language barriers and promotes inclusive learning.
+The application is designed to reduce language barriers and improve confidence in technical learning.
 
 ---
 
 # ❗ Problem Statement
 
-Students from Kannada-medium schools often face challenges while transitioning to English-medium higher education.
+Students from Kannada-medium schools often face difficulties while transitioning into English-medium higher education.
 
-Although they understand concepts well, they struggle with technical vocabulary such as:
+Although they understand concepts well, they struggle with technical terms such as:
 - Photosynthesis
 - Trigonometry
 - Algorithm
-- Economic terms
+- Economic Terms
+- Scientific Vocabulary
 
-Traditional dictionaries are too broad and fail to provide subject-specific contextual explanations in a simple and understandable manner.
+Traditional dictionaries are:
+- Too broad
+- Difficult for students
+- Not subject-specific
+- Lacking contextual explanations
+
+This affects:
+- Academic confidence
+- Technical communication
+- Competitive exam preparation
+- Career readiness
+
+Nalla-Nudi solves this challenge through an easy-to-use offline educational platform.
 
 ---
 
@@ -51,23 +69,24 @@ Traditional dictionaries are too broad and fail to provide subject-specific cont
 
 Nalla-Nudi serves as a **“Bridge Dictionary for Technical Terms”** focused on helping students during their educational transition phase.
 
-The application enables students to:
+The application helps students:
 - Search technical terms instantly
-- Learn simple Kannada explanations
-- Hear correct English pronunciation
-- Build confidence in technical communication
+- Learn Kannada explanations easily
+- Hear correct pronunciation
+- Improve technical communication confidence
 
 The project promotes:
-- Educational equality
-- Digital learning accessibility
-- Linguistic pride
+- 🌍 Educational Equality
+- 📱 Digital Accessibility
+- ❤️ Linguistic Pride
+- 🚀 Inclusive Learning
 
 ---
 
 # ✨ Features
 
 ## 🔍 Instant Technical Word Search
-Search English technical words and get:
+Search technical words and instantly get:
 - Kannada meaning
 - Simple explanation
 - Example usage
@@ -77,8 +96,8 @@ Example:
 
 ---
 
-## 📚 Subject-wise Filters
-Students can explore vocabulary based on subjects:
+## 📚 Subject-wise Vocabulary
+Explore vocabulary based on subjects:
 - Science
 - Mathematics
 - Commerce
@@ -88,16 +107,16 @@ Students can explore vocabulary based on subjects:
 
 ---
 
-## ⭐ My Saved List
-Users can bookmark difficult words for:
+## ⭐ Saved Words List
+Bookmark difficult words for:
 - Daily revision
 - Quick review
 - Flashcard learning
 
 ---
 
-## 🔊 Voice Pronunciation
-Tap the speaker icon to hear the correct pronunciation using Android Text-To-Speech.
+## 🔊 Pronunciation Support
+Hear accurate English pronunciation using Android Text-To-Speech.
 
 ---
 
@@ -106,21 +125,65 @@ Interactive flashcards help students memorize technical terms effectively.
 
 ---
 
+## 🧠 Quiz System
+Students can test their understanding using:
+- Vocabulary quizzes
+- Subject-wise practice
+- Revision exercises
+
+---
+
+## 🌙 Dark Mode Support
+Modern dark mode support for:
+- Better accessibility
+- Reduced eye strain
+- Improved UI experience
+
+---
+
+## 🌟 Word of the Day
+Daily highlighted technical vocabulary for continuous learning.
+
+---
+
 ## 📴 Fully Offline Support
-The application works completely offline without requiring internet access.
+The application works completely offline without internet connectivity.
+
+---
+
+# 🎯 Impact Goals
+
+## 🌍 Equitable Education
+Helping Kannada-medium students overcome language barriers in STEM and technical education.
+
+---
+
+## 🚀 Career Readiness
+Preparing students for:
+- Technical interviews
+- Competitive exams
+- English-medium academics
+
+---
+
+## ❤️ Linguistic Pride
+Encouraging students to learn through their mother tongue while adapting to global technical learning.
 
 ---
 
 # 🛠️ Technology Stack
 
-| Technology | Usage |
+| Technology | Purpose |
 |---|---|
 | Kotlin | Android Development |
-| Android Studio | IDE |
-| Room Database | Local Data Storage |
-| SQLite | Offline Database |
+| Android Studio | Development IDE |
 | XML | UI Design |
-| Text-To-Speech API | Pronunciation Support |
+| Room Database | Local Database |
+| SQLite | Offline Data Storage |
+| MVVM Architecture | App Structure |
+| RecyclerView | Vocabulary Lists |
+| Material Design | Modern UI Components |
+| Text-To-Speech API | Pronunciation Feature |
 
 ---
 
@@ -128,25 +191,27 @@ The application works completely offline without requiring internet access.
 
 ## 📂 Database
 - Preloaded Room Database
-- Subject-wise glossary data
+- Subject-wise glossary management
 - Optimized search queries
 
+---
+
 ## ⚡ Performance
-- Search response under 200ms
+- Fast search response under 200ms
 - Lightweight architecture
 - Smooth offline experience
+
+---
 
 ## 🎨 UI/UX
 - Student-friendly interface
 - Clean educational design
-- Dark mode support
-- Word of the Day feature
+- Flashcard learning system
+- Dark mode compatibility
 
 ---
 
 # 📸 Application Screenshots
-
-> 💡 Images are resized using HTML width control for better README appearance.
 
 ---
 
@@ -158,7 +223,7 @@ The application works completely offline without requiring internet access.
 
 <div align="center">
 
-**Figure 1:** Splash Screen of Nalla-Nudi Application
+**Figure 1:** Splash Screen of Nalla-Nudi
 
 </div>
 
@@ -186,7 +251,7 @@ The application works completely offline without requiring internet access.
 
 <div align="center">
 
-**Figure 3:** Mathematics Subject Vocabulary Filter
+**Figure 3:** Mathematics Vocabulary Screen
 
 </div>
 
@@ -200,7 +265,7 @@ The application works completely offline without requiring internet access.
 
 <div align="center">
 
-**Figure 4:** Commerce Subject Vocabulary Filter
+**Figure 4:** Commerce Vocabulary Screen
 
 </div>
 
@@ -220,37 +285,22 @@ The application works completely offline without requiring internet access.
 
 ---
 
-## 🃏 Flashcard Before Flip
+## 🃏 Flashcard Learning
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/7cdae9b6-016d-4260-a1d6-5ae81b11cc8c" width="250"/>
-</p>
-
-<div align="center">
-
-**Figure 6:** Flashcard Before Flip
-
-</div>
-
----
-
-## 🔄 Flashcard After Flip
-
-<p align="center">
   <img src="https://github.com/user-attachments/assets/b48d91db-e2fa-4f36-85b2-501bf5025878" width="250"/>
-  <img src="https://github.com/user-attachments/assets/871f9404-dcfb-457f-9bd2-5f507985a22b" width="250"/>
-  <img src="https://github.com/user-attachments/assets/f954995c-e020-4087-af5b-a590f058ab84" width="250"/>
 </p>
 
 <div align="center">
 
-**Figure 7:** Flashcard After Flip for Science, Mathematics, and Commerce Terms
+**Figure 6:** Flashcard Learning Feature
 
 </div>
 
 ---
 
-## 🔊 Word Pronunciation Feature
+## 🔊 Pronunciation Feature
 
 <p align="center">
  <img src="https://github.com/user-attachments/assets/1efbc4bf-fd2b-49f9-b006-f8d78e58b6be" width="250"/>
@@ -258,13 +308,13 @@ The application works completely offline without requiring internet access.
 
 <div align="center">
 
-**Figure 8:** Word Pronunciation Feature
+**Figure 7:** Pronunciation Support
 
 </div>
 
 ---
 
-## 📖 Word Definition & Example
+## 📖 Word Definition Screen
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6f6e3fbe-2773-4dd8-bea9-3313fe9352d3" width="250"/>
@@ -272,13 +322,13 @@ The application works completely offline without requiring internet access.
 
 <div align="center">
 
-**Figure 9:** Word Definition and Example Screen
+**Figure 8:** Word Definition and Example
 
 </div>
 
 ---
 
-## ⭐ My Saved List
+## ⭐ Saved Words List
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d5ecf3f0-9e11-490e-9a5b-b369b5895157" width="250"/>
@@ -286,7 +336,7 @@ The application works completely offline without requiring internet access.
 
 <div align="center">
 
-**Figure 10:** My Saved List Screen
+**Figure 9:** Saved Vocabulary List
 
 </div>
 
@@ -300,7 +350,7 @@ The application works completely offline without requiring internet access.
 
 <div align="center">
 
-**Figure 11:** Quiz Completion Screen
+**Figure 10:** Quiz Completion Screen
 
 </div>
 
@@ -314,7 +364,7 @@ The application works completely offline without requiring internet access.
 
 <div align="center">
 
-**Figure 12:** User Profile Screen
+**Figure 11:** User Profile Screen
 
 </div>
 
@@ -329,44 +379,200 @@ The application works completely offline without requiring internet access.
 
 <div align="center">
 
-**Figure 13:** Dark Mode Interface
+**Figure 12:** Dark Mode Interface
 
 </div>
 
 ---
 
-# 🎯 Impact Goals
 
-## 🌍 Equitable Education
-Helping rural and Kannada-medium students overcome language barriers in STEM education.
+# 🚧 Project Status
 
-## 🚀 Skill Readiness
-Preparing students for:
-- Technical interviews
-- Competitive exams
-- English-medium academics
+Nalla-Nudi is currently under active development and enhancement.
 
-## ❤️ Linguistic Pride
-Encouraging students to learn through their mother tongue while adapting to global languages.
+The project aims to continuously improve accessibility and technical learning support for Kannada-medium students.
 
 ---
 
-# ✅ Success Criteria
+# 🔮 Future Enhancements
 
-- Fast search performance under 200ms
-- 100% offline functionality
-- Smooth user experience
-- Flashcard-based revision support
-- Accurate pronunciation assistance
+Planned future improvements include:
+
+- 🌐 Multi-language support
+- ☁️ Cloud synchronization
+- 🤖 AI-powered personalized learning
+- 📊 Student progress tracking
+- 🎮 Gamified learning system
+- 🧑‍🏫 Teacher dashboard
+- 🗣️ Kannada voice search
+- 🔔 Daily revision reminders
+- 📚 Expanded technical glossary database
+- 📱 Tablet-friendly interface
+- 🧠 Smart quiz recommendations
+- 📈 Learning analytics dashboard
 
 ---
 
-# 📚 Educational Purpose
+# 🤝 Contribution
 
-Nalla-Nudi is developed as an educational initiative to empower regional-language students through accessible and technology-driven learning solutions.
+Contributions are welcome!
+
+To contribute:
+1. Fork the repository
+2. Create a new feature branch
+3. Commit your changes
+4. Push your branch
+5. Create a Pull Request
 
 ---
 
+# 📄 License
+
+This project is developed for educational and academic purposes.
+
+---
+
+# 👨‍💻 Developer
+
+## HADIAH TASNEEM
+
+Android Developer | Kotlin Enthusiast | Educational Technology Innovator
+
+---
+
+# 🚀 How to Run the Project
+
+## 📥 Clone Repository
+
+```bash
+git clone <your-repository-link>
+```
+
+---
+
+## 📂 Move Into Project Folder
+
+```bash
+cd Nalla-Nudi
+```
+
+---
+
+## ▶️ Open in Android Studio
+
+### Windows
+
+```bash
+studio64 .
+```
+
+### Linux
+
+```bash
+studio .
+```
+
+### macOS
+
+```bash
+open -a "Android Studio" .
+```
+
+---
+
+## OR Open Manually
+
+1. Open Android Studio
+2. Click **Open**
+3. Select the `Nalla-Nudi` folder
+4. Wait for Gradle Sync
+
+---
+
+## 📱 Start Emulator or Connect Device
+
+### Emulator
+```plaintext
+Android Studio → Device Manager → Start Emulator
+```
+
+### Physical Device
+- Enable USB Debugging
+- Connect via USB
+
+---
+
+## ▶️ Run Application
+
+Click:
+
+```plaintext
+▶ Run App
+```
+
+Shortcut:
+
+### Windows/Linux
+```plaintext
+Shift + F10
+```
+
+### macOS
+```plaintext
+Control + R
+```
+
+---
+
+# ⚙️ Gradle Commands
+
+## 🔨 Build Project
+
+### Windows
+
+```bash
+gradlew build
+```
+
+### Linux/macOS
+
+```bash
+./gradlew build
+```
+
+---
+
+## 🧪 Run Tests
+
+### Windows
+
+```bash
+gradlew test
+```
+
+### Linux/macOS
+
+```bash
+./gradlew test
+```
+
+---
+
+## 📦 Generate Debug APK
+
+### Windows
+
+```bash
+gradlew assembleDebug
+```
+
+### Linux/macOS
+
+```bash
+./gradlew assembleDebug
+```
+
+---
 
 # 🏁 Conclusion
 
@@ -382,6 +588,9 @@ By combining technology with mother-tongue support, the application empowers stu
 
 <div align="center">
 
-### 🌱 “Learning in your mother tongue is the first step toward global knowledge.”
+## 🌱 “Learning in your mother tongue is the first step toward global knowledge.”
 
 </div>
+
+---
+
