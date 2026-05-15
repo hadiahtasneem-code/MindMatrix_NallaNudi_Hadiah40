@@ -393,12 +393,6 @@ Encouraging students to learn through their mother tongue while adapting to glob
 
 ---
 
-# 🎥 Demo Link
-
-Currently, no public APK or demo link is available.
-
----
-
 # 📂 Folder Structure
 
 ```plaintext
