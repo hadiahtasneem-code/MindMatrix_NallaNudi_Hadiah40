@@ -224,8 +224,4 @@ val KannadaFont = FontFamily(Font(R.font.noto_sans_kannada))
 - This allows fresh installs to skip seeding and use a prebuilt database
 
 ---
-
-
-
-Good luck! 🚀
-
+Thank you!
