@@ -7,9 +7,9 @@
 <img src="https://img.shields.io/badge/Language-Kotlin-purple?style=for-the-badge">
 <img src="https://img.shields.io/badge/Database-RoomDB-blue?style=for-the-badge">
 <img src="https://img.shields.io/badge/Offline-Supported-orange?style=for-the-badge">
-<img src="https://img.shields.io/badge/UI-Compose-red?style=for-the-badge">
+<img src="https://img.shields.io/badge/UI-Jetpack%20Compose-red?style=for-the-badge">
 <img src="https://img.shields.io/badge/Architecture-MVVM-yellow?style=for-the-badge">
-<img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
+<img src="https://img.shields.io/badge/Search-FTS4-success?style=for-the-badge">
 
 </div>
 
@@ -30,11 +30,12 @@ Nalla-Nudi acts as a **Bridge Dictionary for Technical Terms** by providing:
 - English technical words
 - Kannada meanings
 - Simple explanations
-- Subject-wise learning
 - Pronunciation support
-- Flashcard-based revision
+- Flashcard-based learning
+- Subject-wise filtering
+- Offline accessibility
 
-The application is designed to reduce language barriers and improve confidence in technical learning.
+The application is designed to reduce language barriers and improve confidence in technical education.
 
 ---
 
@@ -53,7 +54,7 @@ Traditional dictionaries are:
 - Too broad
 - Difficult for students
 - Not subject-specific
-- Lacking contextual explanations
+- Missing contextual explanations
 
 This affects:
 - Academic confidence
@@ -61,7 +62,7 @@ This affects:
 - Competitive exam preparation
 - Career readiness
 
-Nalla-Nudi solves this challenge through an easy-to-use offline educational platform.
+Nalla-Nudi solves this problem through a simple, fast, and completely offline educational platform.
 
 ---
 
@@ -70,10 +71,10 @@ Nalla-Nudi solves this challenge through an easy-to-use offline educational plat
 Nalla-Nudi serves as a **“Bridge Dictionary for Technical Terms”** focused on helping students during their educational transition phase.
 
 The application helps students:
-- Search technical terms instantly
+- Search technical vocabulary instantly
 - Learn Kannada explanations easily
-- Hear correct pronunciation
-- Improve technical communication confidence
+- Hear correct English pronunciation
+- Build confidence in technical communication
 
 The project promotes:
 - 🌍 Educational Equality
@@ -86,13 +87,11 @@ The project promotes:
 # ✨ Features
 
 ## 🔍 Instant Technical Word Search
-Search technical words and instantly get:
+Search technical words instantly and get:
 - Kannada meaning
 - Simple explanation
 - Example usage
-
-Example:
-> Gravity → Gurutvakarshane
+- Pronunciation support
 
 ---
 
@@ -126,18 +125,10 @@ Interactive flashcards help students memorize technical terms effectively.
 ---
 
 ## 🧠 Quiz System
-Students can test their understanding using:
-- Vocabulary quizzes
-- Subject-wise practice
+Students can test vocabulary understanding using:
+- Flashcard quizzes
 - Revision exercises
-
----
-
-## 🌙 Dark Mode Support
-Modern dark mode support for:
-- Better accessibility
-- Reduced eye strain
-- Improved UI experience
+- Subject-wise practice
 
 ---
 
@@ -146,8 +137,16 @@ Daily highlighted technical vocabulary for continuous learning.
 
 ---
 
+## 🌙 Dark Mode Support
+Modern dark mode support for:
+- Better accessibility
+- Reduced eye strain
+- Improved readability
+
+---
+
 ## 📴 Fully Offline Support
-The application works completely offline without internet connectivity.
+The application works completely offline without requiring internet connectivity.
 
 ---
 
@@ -171,76 +170,52 @@ Encouraging students to learn through their mother tongue while adapting to glob
 
 ---
 
-# 🛠️ Technology Stack
+# 🛠️ Tech Stack
 
 | Technology | Purpose |
 |---|---|
 | Kotlin | Android Development |
 | Jetpack Compose | UI Development |
 | Android Studio | Development IDE |
-| Room Database | Local Database |
-| SQLite FTS4 | Full Text Search |
+| Room Database | Local Data Storage |
+| SQLite FTS4 | Fast Search |
 | MVVM Architecture | App Structure |
-| Material Design 3 | Modern UI Components |
-| Text-To-Speech API | Pronunciation Feature |
+| Material Design 3 | Modern UI |
+| Text-To-Speech API | Pronunciation Support |
+| WorkManager | Daily Revision Notifications |
 
 ---
 
 # ⚙️ Technical Implementation
 
 ## ✅ Room Full-Text Search (FTS4)
-
-### Files Added
-- `TermFts.kt` — FTS4 virtual table entity
-
-### Files Modified
-- `TermDao.kt`
-- `AppDatabase.kt`
-- `TermRepository.kt`
-
-### Features
-- Full-text search on English and Kannada words
+- Fast SQLite FTS4 search
 - Prefix matching support
-- Fast ranked suggestions
+- Ranked search suggestions
 - Search performance under 100ms
-- Automatic fallback for short queries
 
 ---
 
-## ✅ Typography & Fonts
-
-### Files Modified
-- `Type.kt`
-
-### Features
-- Clear typography hierarchy
-- Kannada-friendly fonts
-- Technical font styling
-- Ready for custom fonts integration
-
----
-
-## ✅ Flashcard UI & Animations
-
-### Features
-- Smooth 3D flip animation
+## ✅ Flashcard Learning System
+- Smooth 3D card flip animations
 - Tap-to-flip gesture
 - Progress tracking
-- Mark Known system
-- Gradient flashcard styling
-- Interactive learning experience
+- Interactive revision support
 
 ---
 
-## ✅ Stability & Bug Fixes
+## ✅ Typography & Accessibility
+- Kannada-friendly typography
+- Educational readability optimization
+- Material 3 design support
 
-### Improvements
-- Fixed transparent detail dialog
-- Proper TTS lifecycle management
-- Removed deprecated APIs
-- Clean imports
-- Stable offline performance
-- Optimized Compose rendering
+---
+
+## ✅ Stable Offline Architecture
+- Room Database integration
+- MVVM architecture
+- Optimized Compose UI
+- Proper lifecycle management
 
 ---
 
@@ -256,7 +231,7 @@ Encouraging students to learn through their mother tongue while adapting to glob
 
 <div align="center">
 
-**Figure 1:** Splash Screen of Nalla-Nudi
+**Figure 1:** Splash Screen
 
 </div>
 
@@ -270,7 +245,7 @@ Encouraging students to learn through their mother tongue while adapting to glob
 
 <div align="center">
 
-**Figure 2:** Dashboard / Home Screen
+**Figure 2:** Home Dashboard
 
 </div>
 
@@ -284,7 +259,7 @@ Encouraging students to learn through their mother tongue while adapting to glob
 
 <div align="center">
 
-**Figure 3:** Mathematics Vocabulary Screen
+**Figure 3:** Mathematics Vocabulary
 
 </div>
 
@@ -298,7 +273,7 @@ Encouraging students to learn through their mother tongue while adapting to glob
 
 <div align="center">
 
-**Figure 4:** Commerce Vocabulary Screen
+**Figure 4:** Commerce Vocabulary
 
 </div>
 
@@ -327,7 +302,7 @@ Encouraging students to learn through their mother tongue while adapting to glob
 
 <div align="center">
 
-**Figure 6:** Flashcard Learning Feature
+**Figure 6:** Flashcard Learning
 
 </div>
 
@@ -355,7 +330,7 @@ Encouraging students to learn through their mother tongue while adapting to glob
 
 <div align="center">
 
-**Figure 8:** Word Definition and Example
+**Figure 8:** Word Definition & Example
 
 </div>
 
@@ -418,47 +393,101 @@ Encouraging students to learn through their mother tongue while adapting to glob
 
 ---
 
-# 🚧 Project Status
+# 🎥 Demo Link
 
-Nalla-Nudi is currently under active development and enhancement.
-
-The project aims to continuously improve accessibility and technical learning support for Kannada-medium students.
+Currently, no public APK or demo link is available.
 
 ---
 
-# 🔮 Future Enhancements
+# 📂 Folder Structure
 
-Planned future improvements include:
-
-- 🌐 Multi-language support
-- ☁️ Cloud synchronization
-- 🤖 AI-powered personalized learning
-- 📊 Student progress tracking
-- 🎮 Gamified learning system
-- 🧑‍🏫 Teacher dashboard
-- 🗣️ Kannada voice search
-- 🔔 Daily revision reminders
-- 📚 Expanded technical glossary database
-- 📱 Tablet-friendly interface
-- 🧠 Smart quiz recommendations
-- 📈 Learning analytics dashboard
+```plaintext
+nelanudi/
+├── app/
+│   ├── src/
+│   │   └── main/
+│   │       ├── java/com/example/nelanudi/
+│   │       │   ├── data/
+│   │       │   │   ├── local/
+│   │       │   │   │   ├── dao/             # Data Access Objects for Room
+│   │       │   │   │   ├── database/        # AppDatabase & PreloadedTerms
+│   │       │   │   │   └── entity/          # Term Data Model
+│   │       │   │   ├── prefs/               # PreferencesManager
+│   │       │   │   └── repository/          # TermRepository
+│   │       │   ├── ui/
+│   │       │   │   ├── screens/
+│   │       │   │   │   ├── detail/
+│   │       │   │   │   ├── home/
+│   │       │   │   │   ├── quiz/
+│   │       │   │   │   ├── saved/
+│   │       │   │   │   ├── settings/
+│   │       │   │   │   └── splash/
+│   │       │   │   └── theme/
+│   │       │   ├── utils/
+│   │       │   ├── work/
+│   │       │   └── MainActivity.kt
+│   │       ├── assets/
+│   │       ├── res/
+│   │       └── AndroidManifest.xml
+│   ├── build.gradle.kts
+│   ├── .gitignore
+│   └── proguard-rules.pro
+├── gradle/
+│   ├── wrapper/
+│   └── libs.versions.toml
+├── scripts/
+├── build.gradle.kts
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+├── settings.gradle.kts
+├── README.md
+└── IMPLEMENTATION_SUMMARY.md
+```
 
 ---
 
-# 🚀 Build & Run Instructions
+# 🚀 Installation & Setup
 
-# Nalla-Nudi: Build & Run Instructions
-
-## Overview
-**Nalla-Nudi** is an Android app designed to help Kannada-medium students learn technical English vocabulary with Kannada meanings, explanations, and pronunciation guidance.
-
-**Status**: All code compiles successfully. The app is ready to build, install and run on an emulator or Android device.
+## Prerequisites
+- Android Studio
+- JDK 17+
+- Android SDK
+- Emulator or Android device
 
 ---
 
-## Quick Start (Windows PowerShell)
+# ▶️ How to Run the App
 
-### Step 1: Clean Build
+## Step 1: Clone Repository
+
+```bash
+git clone <your-repository-link>
+cd nelanudi
+```
+
+---
+
+## Step 2: Open in Android Studio
+
+- Open Android Studio
+- Click **Open**
+- Select the `nelanudi` project folder
+
+---
+
+## Step 3: Sync Gradle
+
+Allow Android Studio to:
+- Download dependencies
+- Sync Gradle files
+- Build the project
+
+---
+
+# ⚡ Run Commands (Windows PowerShell)
+
+## Clean Build
 
 ```powershell
 cd C:\Users\hadiah\AndroidStudioProjects\nelanudi
@@ -469,7 +498,7 @@ cd C:\Users\hadiah\AndroidStudioProjects\nelanudi
 
 ---
 
-### Step 2: Install on Emulator / Device
+## Install on Emulator / Device
 
 ```powershell
 adb uninstall com.example.nelanudi
@@ -479,22 +508,22 @@ adb uninstall com.example.nelanudi
 
 ---
 
-### Step 3: Launch the App
+## Launch App
 
 - Open emulator/device
-- Run the application
-- Bottom navigation includes:
-  - Home
-  - Saved
-  - Flashcards
+- Press Run ▶️ in Android Studio
+
+Bottom navigation includes:
+- Home
+- Saved
+- Flashcards
 
 ---
 
-# 🧪 Testing the Application
+# 🧪 Testing the App
 
 ## Home Screen
 - Search technical words
-- View suggestions
 - Open word details
 - Save words
 - Play pronunciation
@@ -502,26 +531,24 @@ adb uninstall com.example.nelanudi
 ---
 
 ## Flashcards
-- Tap card to flip
-- Use pronunciation button
-- Mark words as known
+- Flip cards
+- Practice saved words
 - Track progress
 
 ---
 
 ## Saved Words
-- Save important words
-- Practice saved flashcards
-- Review vocabulary later
+- Bookmark words
+- Practice vocabulary later
 
 ---
 
 # ⚙️ Command Summary
 
-## Clean Build
+## Build APK
 
 ```powershell
-.\gradlew.bat clean assembleDebug
+.\gradlew.bat assembleDebug
 ```
 
 ---
@@ -534,6 +561,14 @@ adb uninstall com.example.nelanudi
 
 ---
 
+## Clean Project
+
+```powershell
+.\gradlew.bat clean
+```
+
+---
+
 ## View Logs
 
 ```powershell
@@ -542,56 +577,29 @@ adb logcat
 
 ---
 
-# 🧠 Complete Implementation Summary
-
-## Features Implemented
-
-### ✅ Full-Text Search (FTS4)
-- Fast SQLite FTS4 search
-- Instant ranked suggestions
-- Optimized offline search
-
----
-
-### ✅ Typography System
-- Kannada-friendly typography
-- Technical font hierarchy
-- Readable educational UI
-
----
-
-### ✅ Flashcard Learning System
-- 3D card flip animations
-- Progress tracking
-- Interactive learning flow
-
----
-
-### ✅ Stable Offline Architecture
-- Room Database integration
-- MVVM architecture
-- Optimized Compose UI
-- Proper lifecycle handling
-
----
-
-### ✅ Educational Dashboard
-- Word of the Day
-- Subject filtering
-- Recently viewed words
-- Modern Bento layout
-
----
-
 # 📊 App Performance
 
 | Feature | Performance |
 |---|---|
-| Search Response | < 100ms |
+| Search Speed | < 100ms |
 | Offline Support | 100% |
 | Database | Room + SQLite FTS4 |
-| Terms Loaded | 1000+ |
+| Terms Supported | 1000+ |
+| Architecture | MVVM |
 | UI Framework | Jetpack Compose |
+
+---
+
+# 🔮 Future Improvements
+
+Planned future enhancements include:
+
+
+- 📚 Expanded offline glossary database with 10,000+ technical and academic terms
+- 🧠 Smart offline revision system using spaced repetition learning (SRS)
+- 🌐 Multi-language support for Kannada, Hindi, Tamil, and Telugu
+- 🎮 Gamified learning system with achievements, streaks, and rewards
+- 📱 Tablet-friendly UI with optimized layouts for larger screens
 
 ---
 
@@ -599,12 +607,12 @@ adb logcat
 
 Contributions are welcome!
 
-To contribute:
+## Steps
 1. Fork the repository
 2. Create a feature branch
 3. Commit changes
-4. Push branch
-5. Open Pull Request
+4. Push changes
+5. Open a Pull Request
 
 ---
 
@@ -636,7 +644,9 @@ By combining technology with mother-tongue support, the application empowers stu
 
 <div align="center">
 
-## 🌱 “Learning in your mother tongue is the first step toward global knowledge.”
+### 🌱 “Learning in your mother tongue is the first step toward global knowledge.”
 
 </div>
+
+
 
