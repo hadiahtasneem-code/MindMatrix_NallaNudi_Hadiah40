@@ -225,29 +225,7 @@ val KannadaFont = FontFamily(Font(R.font.noto_sans_kannada))
 
 ---
 
-## Summary
 
-✅ **All code compiles** — no errors or critical warnings
-✅ **All features working** — FTS search, animations, TTS, flashcards
-✅ **Multiple improvement levels** — placeholder terms ready for real data
-✅ **Complete offline** — Room DB, no network required
-✅ **Responsive UI** — Bento layout, smooth animations, accessible design
-
-**You're ready to build, install, and test!**
-
-## Command Summary
-
-```powershell
-# Clean build
-.\gradlew.bat clean assembleDebug
-
-# Install
-adb uninstall com.example.nelanudi
-.\gradlew.bat installDebug
-
-# View logs
-adb logcat
-```
 
 Good luck! 🚀
 
